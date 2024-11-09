@@ -102,23 +102,39 @@
         <section id="main" class="d-flex align-items-center justify-content-center" style="height: 100vh;
         box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
         ">
-            <a href="#carouselExampleIndicators" class="text-decoration-none text-bg-dark">
+            <a href="#carouselSuccess" class="text-decoration-none text-bg-dark">
                 <h2 class="my-2 h1 fs-1 text-uppercase text-center">PAGES MADE</h2>
             </a>
         </section>
 
-        <section id="carousel" class="h-100" style="height: 100vh;
+        <section id="secCarouselSuccess" class="h-100" style="height: 100vh;
         box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
         ">
-            <div id="carouselExampleIndicators" class="carousel slide" style="height: 100%;" data-bs-ride="carousel">
+
+            <div id="carouselSuccess" class="carousel slide" style="height: 100%;" data-bs-ride="carousel">
+
+                <button type="button"
+                    class="carousel-control-prev btn btn-outline-success position-absolute bottom-0 start-0 ms-5 mb-4 mt-auto"
+                    style="height: 30px; width: 30px;" data-bs-target="#carouselSuccess" data-bs-slide="prev">
+                    <span class="fa-solid fa-chevron-left" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button type="button"
+                    class="carousel-control-next btn btn-outline-success position-absolute bottom-0 end-0 me-5 mb-4 mt-auto"
+                    style="height: 30px; width: 30px;" data-bs-target="#carouselSuccess" data-bs-slide="next">
+                    <span class="fa-solid fa-chevron-right" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active rounded-circle" aria-label="Slide 1" aria-current="true"
+                    <button type="button" data-bs-target="#carouselSuccess" data-bs-slide-to="0"
+                        class="active rounded-circle text-bg-success" aria-label="Slide 1" aria-current="true"
                         style="width: 20px; height: 20px;"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2" class="rounded-circle" style="width: 20px; height: 20px;"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3" class="rounded-circle" style="width: 20px; height: 20px;"></button>
+                    <button type="button" data-bs-target="#carouselSuccess" data-bs-slide-to="1" aria-label="Slide 2"
+                        class="rounded-circle text-bg-success" style="width: 20px; height: 20px;"></button>
+                    <button type="button" data-bs-target="#carouselSuccess" data-bs-slide-to="2" aria-label="Slide 3"
+                        class="rounded-circle text-bg-success" style="width: 20px; height: 20px;"></button>
                 </div>
 
                 <div class="carousel-inner h-100">
@@ -128,13 +144,33 @@
                             class="container-fluid p-0 m-0 d-flex align-items-center justify-content-evenly w-100 h-100 col-9">
 
                             <div class="card col-3">
-                                <div class="rounded-2 rounded-bottom-0 image">
+                                <div class="rounded-2 rounded-bottom-0 image position-relative">
                                     <img src="https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                         alt="..." class="card-img-top" draggable="false">
+
                                     <span
                                         class="position-absolute top-0 end-0 m-2 px-3 py-2 hoverScale badge rounded-pill text-bg-success text-uppercase">
-                                        New / Complete
+                                        New
                                     </span>
+
+                                    <div
+                                        class="position-absolute bottom-0 end-0 bg-transparent w-100 px-3 py-2 d-flex align-items-center justify-content-end">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
+                                            style="width: 20px;">
+                                    </div>
                                 </div>
 
                                 <div class="card-header d-flex align-items-center justify-content-center">
@@ -188,7 +224,379 @@
                             </div>
 
                             <div class="card col-3">
-                                <div class="rounded-2 rounded-bottom-0 image">
+                                <div class="rounded-2 rounded-bottom-0 image position-relative">
+                                    <img src="https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="..." class="card-img-top" draggable="false">
+
+                                    <span
+                                        class="position-absolute top-0 end-0 m-2 px-3 py-2 hoverScale badge rounded-pill text-bg-success text-uppercase">
+                                        New
+                                    </span>
+
+                                    <div
+                                        class="position-absolute bottom-0 end-0 bg-transparent w-100 px-3 py-2 d-flex align-items-center justify-content-end">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
+                                            style="width: 20px;">
+                                    </div>
+                                </div>
+
+                                <div class="card-header d-flex align-items-center justify-content-center">
+                                    <h5 class="card-title text-center text-uppercase">Card title</h5>
+                                </div>
+
+                                <div class="card-body d-flex flex-column" style="overflow-x: auto;">
+                                    <p class=" card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+
+                                    <div>
+                                        <div class="btn-group hoverScale">
+                                            <a href="#" class="btn btn-outline-primary">
+                                                Novidades da versão
+                                            </a>
+                                            <a href="#" class="btn btn-outline-primary">
+                                                <i class="fa-regular fa-newspaper"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex flex-row align-items-center mt-auto py-2 px-3">
+                                    Contributors:
+                                    <div class="ms-auto">
+                                        <a href="https://github.com/Dev-Samuel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566104?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                        <a href="https://github.com/Dev-Daniel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566606?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex align-items-center justify-content-center">
+                                    <div class="btn-group hoverScale">
+                                        <a href="1. Wonderful tours/index.html"
+                                            class="btn btn-outline-success text-uppercase py-2 px-3" target="_blank">
+                                            Visit page
+                                        </a>
+                                        <a href="1. Wonderful tours/index.html" target="_blank"
+                                            class="btn btn-outline-success fa-solid fa-up-right-from-square text-center d-flex align-items-center">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card col-3">
+                                <div class="rounded-2 rounded-bottom-0 image position-relative">
+                                    <img src="https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="..." class="card-img-top" draggable="false">
+
+                                    <span
+                                        class="position-absolute top-0 end-0 m-2 px-3 py-2 hoverScale badge rounded-pill text-bg-success text-uppercase">
+                                        New
+                                    </span>
+
+                                    <div
+                                        class="position-absolute bottom-0 end-0 bg-transparent w-100 px-3 py-2 d-flex align-items-center justify-content-end">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
+                                            style="width: 20px;">
+                                    </div>
+                                </div>
+
+                                <div class="card-header d-flex align-items-center justify-content-center">
+                                    <h5 class="card-title text-center text-uppercase">Card title</h5>
+                                </div>
+
+                                <div class="card-body d-flex flex-column" style="overflow-x: auto;">
+                                    <p class=" card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+
+                                    <div>
+                                        <div class="btn-group hoverScale">
+                                            <a href="#" class="btn btn-outline-primary">
+                                                Novidades da versão
+                                            </a>
+                                            <a href="#" class="btn btn-outline-primary">
+                                                <i class="fa-regular fa-newspaper"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex flex-row align-items-center mt-auto py-2 px-3">
+                                    Contributors:
+                                    <div class="ms-auto">
+                                        <a href="https://github.com/Dev-Samuel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566104?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                        <a href="https://github.com/Dev-Daniel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566606?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex align-items-center justify-content-center">
+                                    <div class="btn-group hoverScale">
+                                        <a href="1. Wonderful tours/index.html"
+                                            class="btn btn-outline-success text-uppercase py-2 px-3" target="_blank">
+                                            Visit page
+                                        </a>
+                                        <a href="1. Wonderful tours/index.html" target="_blank"
+                                            class="btn btn-outline-success fa-solid fa-up-right-from-square text-center d-flex align-items-center">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item h-100" data-bs-interval="3000">
+
+                        <div
+                            class="container-fluid p-0 m-0 d-flex align-items-center justify-content-evenly w-100 h-100 col-9">
+
+                            <div class="card col-3">
+                                <div class="rounded-2 rounded-bottom-0 image position-relative">
+                                    <img src="https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="..." class="card-img-top" draggable="false">
+
+                                    <span
+                                        class="position-absolute top-0 end-0 m-2 px-3 py-2 hoverScale badge rounded-pill text-bg-success text-uppercase">
+                                        New
+                                    </span>
+
+                                    <div
+                                        class="position-absolute bottom-0 end-0 bg-transparent w-100 px-3 py-2 d-flex align-items-center justify-content-end">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
+                                            style="width: 20px;">
+                                    </div>
+                                </div>
+
+                                <div class="card-header d-flex align-items-center justify-content-center">
+                                    <h5 class="card-title text-center text-uppercase">Card title</h5>
+                                </div>
+
+                                <div class="card-body d-flex flex-column" style="overflow-x: auto;">
+                                    <p class=" card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+
+                                    <div>
+                                        <div class="btn-group hoverScale">
+                                            <a href="#" class="btn btn-outline-primary">
+                                                Novidades da versão
+                                            </a>
+                                            <a href="#" class="btn btn-outline-primary">
+                                                <i class="fa-regular fa-newspaper"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex flex-row align-items-center mt-auto py-2 px-3">
+                                    Contributors:
+                                    <div class="ms-auto">
+                                        <a href="https://github.com/Dev-Samuel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566104?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                        <a href="https://github.com/Dev-Daniel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566606?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex align-items-center justify-content-center">
+                                    <div class="btn-group hoverScale">
+                                        <a href="1. Wonderful tours/index.html"
+                                            class="btn btn-outline-success text-uppercase py-2 px-3" target="_blank">
+                                            Visit page
+                                        </a>
+                                        <a href="1. Wonderful tours/index.html" target="_blank"
+                                            class="btn btn-outline-success fa-solid fa-up-right-from-square text-center d-flex align-items-center">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card col-3">
+                                <div class="rounded-2 rounded-bottom-0 image position-relative">
+                                    <img src="https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="..." class="card-img-top" draggable="false">
+
+                                    <span
+                                        class="position-absolute top-0 end-0 m-2 px-3 py-2 hoverScale badge rounded-pill text-bg-success text-uppercase">
+                                        New
+                                    </span>
+
+                                    <div
+                                        class="position-absolute bottom-0 end-0 bg-transparent w-100 px-3 py-2 d-flex align-items-center justify-content-end">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
+                                            style="width: 20px;">
+                                    </div>
+                                </div>
+
+                                <div class="card-header d-flex align-items-center justify-content-center">
+                                    <h5 class="card-title text-center text-uppercase">Card title</h5>
+                                </div>
+
+                                <div class="card-body d-flex flex-column" style="overflow-x: auto;">
+                                    <p class=" card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+
+                                    <div>
+                                        <div class="btn-group hoverScale">
+                                            <a href="#" class="btn btn-outline-primary">
+                                                Novidades da versão
+                                            </a>
+                                            <a href="#" class="btn btn-outline-primary">
+                                                <i class="fa-regular fa-newspaper"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex flex-row align-items-center mt-auto py-2 px-3">
+                                    Contributors:
+                                    <div class="ms-auto">
+                                        <a href="https://github.com/Dev-Samuel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566104?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                        <a href="https://github.com/Dev-Daniel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566606?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex align-items-center justify-content-center">
+                                    <div class="btn-group hoverScale">
+                                        <a href="1. Wonderful tours/index.html"
+                                            class="btn btn-outline-success text-uppercase py-2 px-3" target="_blank">
+                                            Visit page
+                                        </a>
+                                        <a href="1. Wonderful tours/index.html" target="_blank"
+                                            class="btn btn-outline-success fa-solid fa-up-right-from-square text-center d-flex align-items-center">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="secCarouselBuilding" class="h-100" style="height: 100vh;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        ">
+
+            <div id="carouselBuilding" class="carousel slide" style="height: 100%;" data-bs-ride="carousel">
+
+                <button type="button"
+                    class="carousel-control-prev btn btn-outline-warning position-absolute bottom-0 start-0 ms-5 mb-4 mt-auto"
+                    style="height: 30px; width: 30px;" data-bs-target="#carouselBuilding" data-bs-slide="prev">
+                    <span class="fa-solid fa-chevron-left" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button type="button"
+                    class="carousel-control-next btn btn-outline-warning position-absolute bottom-0 end-0 me-5 mb-4 mt-auto"
+                    style="height: 30px; width: 30px;" data-bs-target="#carouselBuilding" data-bs-slide="next">
+                    <span class="fa-solid fa-chevron-right" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselBuilding" data-bs-slide-to="0"
+                        class="active rounded-circle text-bg-warning" aria-label="Slide 1" aria-current="true"
+                        style="width: 20px; height: 20px;"></button>
+                    <button type="button" data-bs-target="#carouselBuilding" data-bs-slide-to="1" aria-label="Slide 2"
+                        class="rounded-circle text-bg-warning" style="width: 20px; height: 20px;"></button>
+                    <button type="button" data-bs-target="#carouselBuilding" data-bs-slide-to="2" aria-label="Slide 3"
+                        class="rounded-circle text-bg-warning" style="width: 20px; height: 20px;"></button>
+                </div>
+
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100" data-bs-interval="3000">
+
+                        <div
+                            class="container-fluid p-0 m-0 d-flex align-items-center justify-content-evenly w-100 h-100 col-9">
+
+                            <div class="card col-3">
+                                <div class="rounded-2 rounded-bottom-0 image position-relative">
                                     <img src="https://images.pexels.com/photos/2533092/pexels-photo-2533092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                         alt="..." class="card-img-top" draggable="false">
 
@@ -196,6 +604,25 @@
                                         class="position-absolute top-0 end-0 m-2 px-3 py-2 hoverScale badge rounded-pill text-bg-warning text-uppercase">
                                         Building
                                     </span>
+
+                                    <div
+                                        class="position-absolute bottom-0 end-0 bg-transparent w-100 px-3 py-2 d-flex align-items-center justify-content-end">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
+                                            style="width: 20px;">
+                                    </div>
                                 </div>
 
                                 <div class="card-header">
@@ -203,7 +630,7 @@
                                 </div>
 
                                 <div class="card-body d-flex flex-column" style="overflow-x: auto;">
-                                    <p class=" card-text">Some quick example text to build on the card title and make up
+                                    <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk of the card's content.</p>
 
                                     <div>
@@ -248,8 +675,386 @@
                                 </div>
                             </div>
 
+
+
+                            <div class="card col-3">
+                                <div class="rounded-2 rounded-bottom-0 image position-relative">
+                                    <img src="https://images.pexels.com/photos/2533092/pexels-photo-2533092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="..." class="card-img-top" draggable="false">
+
+                                    <span
+                                        class="position-absolute top-0 end-0 m-2 px-3 py-2 hoverScale badge rounded-pill text-bg-warning text-uppercase">
+                                        Building
+                                    </span>
+
+                                    <div
+                                        class="position-absolute bottom-0 end-0 bg-transparent w-100 px-3 py-2 d-flex align-items-center justify-content-end">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
+                                            style="width: 20px;">
+                                    </div>
+                                </div>
+
+                                <div class="card-header">
+                                    <h5 class="card-title text-center text-uppercase">Card title</h5>
+                                </div>
+
+                                <div class="card-body d-flex flex-column" style="overflow-x: auto;">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+
+                                    <div>
+                                        <div class="btn-group hoverScale">
+                                            <a href="#" class="btn btn-outline-primary">
+                                                Novidades da versão
+                                            </a>
+                                            <a href="#" class="btn btn-outline-primary">
+                                                <i class="fa-regular fa-newspaper"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex flex-row align-items-center mt-auto py-2 px-3">
+                                    Contributors:
+                                    <div class="ms-auto">
+                                        <a href="https://github.com/Dev-Samuel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566104?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                        <a href="https://github.com/Dev-Daniel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566606?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex align-items-center justify-content-center">
+                                    <div class="btn-group hoverScale">
+                                        <a href="1. Wonderful tours/index.html"
+                                            class="btn btn-outline-warning text-uppercase py-2 px-3" target="_blank">
+                                            DEMO
+                                        </a>
+                                        <a href="1. Wonderful tours/index.html" target="_blank"
+                                            class="btn btn-outline-warning fa-solid fa-up-right-from-square text-center d-flex align-items-center">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="card col-3">
+                                <div class="rounded-2 rounded-bottom-0 image position-relative">
+                                    <img src="https://images.pexels.com/photos/2533092/pexels-photo-2533092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="..." class="card-img-top" draggable="false">
+
+                                    <span
+                                        class="position-absolute top-0 end-0 m-2 px-3 py-2 hoverScale badge rounded-pill text-bg-warning text-uppercase">
+                                        Building
+                                    </span>
+
+                                    <div
+                                        class="position-absolute bottom-0 end-0 bg-transparent w-100 px-3 py-2 d-flex align-items-center justify-content-end">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
+                                            style="width: 20px;">
+                                    </div>
+                                </div>
+
+                                <div class="card-header">
+                                    <h5 class="card-title text-center text-uppercase">Card title</h5>
+                                </div>
+
+                                <div class="card-body d-flex flex-column" style="overflow-x: auto;">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+
+                                    <div>
+                                        <div class="btn-group hoverScale">
+                                            <a href="#" class="btn btn-outline-primary">
+                                                Novidades da versão
+                                            </a>
+                                            <a href="#" class="btn btn-outline-primary">
+                                                <i class="fa-regular fa-newspaper"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex flex-row align-items-center mt-auto py-2 px-3">
+                                    Contributors:
+                                    <div class="ms-auto">
+                                        <a href="https://github.com/Dev-Samuel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566104?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                        <a href="https://github.com/Dev-Daniel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566606?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex align-items-center justify-content-center">
+                                    <div class="btn-group hoverScale">
+                                        <a href="1. Wonderful tours/index.html"
+                                            class="btn btn-outline-warning text-uppercase py-2 px-3" target="_blank">
+                                            DEMO
+                                        </a>
+                                        <a href="1. Wonderful tours/index.html" target="_blank"
+                                            class="btn btn-outline-warning fa-solid fa-up-right-from-square text-center d-flex align-items-center">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item h-100" data-bs-interval="3000">
+
+                        <div
+                            class="container-fluid p-0 m-0 d-flex align-items-center justify-content-evenly w-100 h-100 col-9">
+
+                            <div class="card col-3">
+                                <div class="rounded-2 rounded-bottom-0 image position-relative">
+                                    <img src="https://images.pexels.com/photos/2533092/pexels-photo-2533092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="..." class="card-img-top" draggable="false">
+
+                                    <span
+                                        class="position-absolute top-0 end-0 m-2 px-3 py-2 hoverScale badge rounded-pill text-bg-warning text-uppercase">
+                                        Building
+                                    </span>
+
+                                    <div
+                                        class="position-absolute bottom-0 end-0 bg-transparent w-100 px-3 py-2 d-flex align-items-center justify-content-end">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
+                                            style="width: 20px;">
+                                    </div>
+                                </div>
+
+                                <div class="card-header">
+                                    <h5 class="card-title text-center text-uppercase">Card title</h5>
+                                </div>
+
+                                <div class="card-body d-flex flex-column" style="overflow-x: auto;">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+
+                                    <div>
+                                        <div class="btn-group hoverScale">
+                                            <a href="#" class="btn btn-outline-primary">
+                                                Novidades da versão
+                                            </a>
+                                            <a href="#" class="btn btn-outline-primary">
+                                                <i class="fa-regular fa-newspaper"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex flex-row align-items-center mt-auto py-2 px-3">
+                                    Contributors:
+                                    <div class="ms-auto">
+                                        <a href="https://github.com/Dev-Samuel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566104?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                        <a href="https://github.com/Dev-Daniel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566606?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex align-items-center justify-content-center">
+                                    <div class="btn-group hoverScale">
+                                        <a href="1. Wonderful tours/index.html"
+                                            class="btn btn-outline-warning text-uppercase py-2 px-3" target="_blank">
+                                            DEMO
+                                        </a>
+                                        <a href="1. Wonderful tours/index.html" target="_blank"
+                                            class="btn btn-outline-warning fa-solid fa-up-right-from-square text-center d-flex align-items-center">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="card col-3">
+                                <div class="rounded-2 rounded-bottom-0 image position-relative">
+                                    <img src="https://images.pexels.com/photos/2533092/pexels-photo-2533092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="..." class="card-img-top" draggable="false">
+
+                                    <span
+                                        class="position-absolute top-0 end-0 m-2 px-3 py-2 hoverScale badge rounded-pill text-bg-warning text-uppercase">
+                                        Building
+                                    </span>
+
+                                    <div
+                                        class="position-absolute bottom-0 end-0 bg-transparent w-100 px-3 py-2 d-flex align-items-center justify-content-end">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
+                                            style="width: 20px;">
+                                    </div>
+                                </div>
+
+                                <div class="card-header">
+                                    <h5 class="card-title text-center text-uppercase">Card title</h5>
+                                </div>
+
+                                <div class="card-body d-flex flex-column" style="overflow-x: auto;">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+
+                                    <div>
+                                        <div class="btn-group hoverScale">
+                                            <a href="#" class="btn btn-outline-primary">
+                                                Novidades da versão
+                                            </a>
+                                            <a href="#" class="btn btn-outline-primary">
+                                                <i class="fa-regular fa-newspaper"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex flex-row align-items-center mt-auto py-2 px-3">
+                                    Contributors:
+                                    <div class="ms-auto">
+                                        <a href="https://github.com/Dev-Samuel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566104?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                        <a href="https://github.com/Dev-Daniel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566606?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex align-items-center justify-content-center">
+                                    <div class="btn-group hoverScale">
+                                        <a href="1. Wonderful tours/index.html"
+                                            class="btn btn-outline-warning text-uppercase py-2 px-3" target="_blank">
+                                            DEMO
+                                        </a>
+                                        <a href="1. Wonderful tours/index.html" target="_blank"
+                                            class="btn btn-outline-warning fa-solid fa-up-right-from-square text-center d-flex align-items-center">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="secCarouselPaused" class="h-100" style="height: 100vh;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        ">
+
+            <div id="carouselPaused" class="carousel slide" style="height: 100%;" data-bs-ride="carousel">
+
+                <button type="button"
+                    class="carousel-control-prev btn btn-outline-secondary position-absolute bottom-0 start-0 ms-5 mb-4 mt-auto"
+                    style="height: 30px; width: 30px;" data-bs-target="#carouselPaused" data-bs-slide="prev">
+                    <span class="fa-solid fa-chevron-left" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button type="button"
+                    class="carousel-control-next btn btn-outline-secondary position-absolute bottom-0 end-0 me-5 mb-4 mt-auto"
+                    style="height: 30px; width: 30px;" data-bs-target="#carouselPaused" data-bs-slide="next">
+                    <span class="fa-solid fa-chevron-right" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselPaused" data-bs-slide-to="0"
+                        class="active rounded-circle text-bg-secondary" aria-label="Slide 1" aria-current="true"
+                        style="width: 20px; height: 20px;"></button>
+                    <button type="button" data-bs-target="#carouselPaused" data-bs-slide-to="1" aria-label="Slide 2"
+                        class="rounded-circle text-bg-secondary" style="width: 20px; height: 20px;"></button>
+                    <button type="button" data-bs-target="#carouselPaused" data-bs-slide-to="2" aria-label="Slide 3"
+                        class="rounded-circle text-bg-secondary" style="width: 20px; height: 20px;"></button>
+                </div>
+
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100" data-bs-interval="3000">
+
+                        <div
+                            class="container-fluid p-0 m-0 d-flex align-items-center justify-content-evenly w-100 h-100 col-9">
+
                             <div class="card col-3" style="opacity: 0.5;">
-                                <div class="rounded-2 rounded-bottom-0 image">
+                                <div class="rounded-2 rounded-bottom-0 image position-relative">
                                     <img src="https://images.pexels.com/photos/167698/pexels-photo-167698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                         alt="..." class="card-img-top" draggable="false">
 
@@ -257,6 +1062,185 @@
                                         class="position-absolute top-0 end-0 m-2 px-3 py-2 hoverScale badge rounded-pill text-bg-dark text-uppercase">
                                         Paused
                                     </span>
+
+                                    <div
+                                        class="position-absolute bottom-0 end-0 bg-transparent w-100 px-3 py-2 d-flex align-items-center justify-content-end">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
+                                            style="width: 20px;">
+                                    </div>
+                                </div>
+
+                                <div class="card-header">
+                                    <h5 class="card-title text-center text-uppercase">Card title</h5>
+                                </div>
+
+                                <div class="card-body d-flex flex-column" style="overflow-x: auto;">
+                                    <p class=" card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+
+                                    <div>
+                                        <div class="btn-group hoverScale">
+                                            <a href="#" class="btn btn-outline-primary">
+                                                Novidades da versão
+                                            </a>
+                                            <a href="#" class="btn btn-outline-primary">
+                                                <i class="fa-regular fa-newspaper"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex flex-row align-items-center mt-auto py-2 px-3">
+                                    Contributors:
+                                    <div class="ms-auto">
+                                        <a href="https://github.com/Dev-Samuel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566104?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                        <a href="https://github.com/Dev-Daniel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566606?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex align-items-center justify-content-center">
+                                    <div class="btn-group hoverScale">
+                                        <a href="#" class="btn btn-outline-secondary text-uppercase py-2 px-3"
+                                            target="_blank">
+                                            PAUSED
+                                        </a>
+                                        <a href="#" target="_blank"
+                                            class="btn btn-outline-secondary fa-solid fa-up-right-from-square text-center d-flex align-items-center">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card col-3" style="opacity: 0.5;">
+                                <div class="rounded-2 rounded-bottom-0 image position-relative">
+                                    <img src="https://images.pexels.com/photos/167698/pexels-photo-167698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="..." class="card-img-top" draggable="false">
+
+                                    <span
+                                        class="position-absolute top-0 end-0 m-2 px-3 py-2 hoverScale badge rounded-pill text-bg-dark text-uppercase">
+                                        Paused
+                                    </span>
+
+                                    <div
+                                        class="position-absolute bottom-0 end-0 bg-transparent w-100 px-3 py-2 d-flex align-items-center justify-content-end">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
+                                            style="width: 20px;">
+                                    </div>
+                                </div>
+
+                                <div class="card-header">
+                                    <h5 class="card-title text-center text-uppercase">Card title</h5>
+                                </div>
+
+                                <div class="card-body d-flex flex-column" style="overflow-x: auto;">
+                                    <p class=" card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+
+                                    <div>
+                                        <div class="btn-group hoverScale">
+                                            <a href="#" class="btn btn-outline-primary">
+                                                Novidades da versão
+                                            </a>
+                                            <a href="#" class="btn btn-outline-primary">
+                                                <i class="fa-regular fa-newspaper"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex flex-row align-items-center mt-auto py-2 px-3">
+                                    Contributors:
+                                    <div class="ms-auto">
+                                        <a href="https://github.com/Dev-Samuel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566104?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                        <a href="https://github.com/Dev-Daniel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566606?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex align-items-center justify-content-center">
+                                    <div class="btn-group hoverScale">
+                                        <a href="#" class="btn btn-outline-secondary text-uppercase py-2 px-3"
+                                            target="_blank">
+                                            PAUSED
+                                        </a>
+                                        <a href="#" target="_blank"
+                                            class="btn btn-outline-secondary fa-solid fa-up-right-from-square text-center d-flex align-items-center">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card col-3" style="opacity: 0.5;">
+                                <div class="rounded-2 rounded-bottom-0 image position-relative">
+                                    <img src="https://images.pexels.com/photos/167698/pexels-photo-167698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="..." class="card-img-top" draggable="false">
+
+                                    <span
+                                        class="position-absolute top-0 end-0 m-2 px-3 py-2 hoverScale badge rounded-pill text-bg-dark text-uppercase">
+                                        Paused
+                                    </span>
+
+                                    <div
+                                        class="position-absolute bottom-0 end-0 bg-transparent w-100 px-3 py-2 d-flex align-items-center justify-content-end">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
+                                            style="width: 20px;">
+                                    </div>
                                 </div>
 
                                 <div class="card-header">
@@ -313,41 +1297,169 @@
 
                     </div>
 
-
                     <div class="carousel-item h-100" data-bs-interval="3000">
 
                         <div
                             class="container-fluid p-0 m-0 d-flex align-items-center justify-content-evenly w-100 h-100 col-9">
 
-                            <div class="card col-3">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
-                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
-                                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                                    <title>Placeholder</title>
-                                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%"
-                                        fill="#dee2e6" dy=".3em">Image cap</text>
-                                </svg>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
+
+                            <div class="card col-3" style="opacity: 0.5;">
+                                <div class="rounded-2 rounded-bottom-0 image position-relative">
+                                    <img src="https://images.pexels.com/photos/167698/pexels-photo-167698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="..." class="card-img-top" draggable="false">
+
+                                    <span
+                                        class="position-absolute top-0 end-0 m-2 px-3 py-2 hoverScale badge rounded-pill text-bg-dark text-uppercase">
+                                        Paused
+                                    </span>
+
+                                    <div
+                                        class="position-absolute bottom-0 end-0 bg-transparent w-100 px-3 py-2 d-flex align-items-center justify-content-end">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
+                                            style="width: 20px;">
+                                    </div>
+                                </div>
+
+                                <div class="card-header">
+                                    <h5 class="card-title text-center text-uppercase">Card title</h5>
+                                </div>
+
+                                <div class="card-body d-flex flex-column" style="overflow-x: auto;">
+                                    <p class=" card-text">Some quick example text to build on the card title and make up
                                         the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+
+                                    <div>
+                                        <div class="btn-group hoverScale">
+                                            <a href="#" class="btn btn-outline-primary">
+                                                Novidades da versão
+                                            </a>
+                                            <a href="#" class="btn btn-outline-primary">
+                                                <i class="fa-regular fa-newspaper"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex flex-row align-items-center mt-auto py-2 px-3">
+                                    Contributors:
+                                    <div class="ms-auto">
+                                        <a href="https://github.com/Dev-Samuel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566104?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                        <a href="https://github.com/Dev-Daniel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566606?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex align-items-center justify-content-center">
+                                    <div class="btn-group hoverScale">
+                                        <a href="#" class="btn btn-outline-secondary text-uppercase py-2 px-3"
+                                            target="_blank">
+                                            PAUSED
+                                        </a>
+                                        <a href="#" target="_blank"
+                                            class="btn btn-outline-secondary fa-solid fa-up-right-from-square text-center d-flex align-items-center">
+                                        </a>
+                                    </div>
+
                                 </div>
                             </div>
 
-                            <div class="card col-3">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
-                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
-                                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                                    <title>Placeholder</title>
-                                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%"
-                                        fill="#dee2e6" dy=".3em">Image cap</text>
-                                </svg>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
+                            <div class="card col-3" style="opacity: 0.5;">
+                                <div class="rounded-2 rounded-bottom-0 image position-relative">
+                                    <img src="https://images.pexels.com/photos/167698/pexels-photo-167698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="..." class="card-img-top" draggable="false">
+
+                                    <span
+                                        class="position-absolute top-0 end-0 m-2 px-3 py-2 hoverScale badge rounded-pill text-bg-dark text-uppercase">
+                                        Paused
+                                    </span>
+
+                                    <div
+                                        class="position-absolute bottom-0 end-0 bg-transparent w-100 px-3 py-2 d-flex align-items-center justify-content-end">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt=""
+                                            style="width: 20px;">
+                                        <img class="ms-2 hoverScale"
+                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
+                                            style="width: 20px;">
+                                    </div>
+                                </div>
+
+                                <div class="card-header">
+                                    <h5 class="card-title text-center text-uppercase">Card title</h5>
+                                </div>
+
+                                <div class="card-body d-flex flex-column" style="overflow-x: auto;">
+                                    <p class=" card-text">Some quick example text to build on the card title and make up
                                         the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+
+                                    <div>
+                                        <div class="btn-group hoverScale">
+                                            <a href="#" class="btn btn-outline-primary">
+                                                Novidades da versão
+                                            </a>
+                                            <a href="#" class="btn btn-outline-primary">
+                                                <i class="fa-regular fa-newspaper"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex flex-row align-items-center mt-auto py-2 px-3">
+                                    Contributors:
+                                    <div class="ms-auto">
+                                        <a href="https://github.com/Dev-Samuel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566104?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                        <a href="https://github.com/Dev-Daniel-121" class="text-decoration-none  w-100">
+                                            <img src="https://avatars.githubusercontent.com/u/131566606?v=4"
+                                                class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer d-flex align-items-center justify-content-center">
+                                    <div class="btn-group hoverScale">
+                                        <a href="#" class="btn btn-outline-secondary text-uppercase py-2 px-3"
+                                            target="_blank">
+                                            PAUSED
+                                        </a>
+                                        <a href="#" target="_blank"
+                                            class="btn btn-outline-secondary fa-solid fa-up-right-from-square text-center d-flex align-items-center">
+                                        </a>
+                                    </div>
+
                                 </div>
                             </div>
 
@@ -356,6 +1468,183 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section id="secCarouselPaused" class="h-100" style="height: 100vh;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        ">
+
+
+            <main style="height: 100vh;">
+
+                <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+
+                <section id="fronEnd" class="h-100" style="height: 100vh;">
+                    <div class="card col-3">
+                        <div class="rounded-2 rounded-bottom-0 image position-relative">
+                            <img src="https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="..." class="card-img-top" draggable="false">
+
+                            <span
+                                class="position-absolute top-0 end-0 m-2 px-3 py-2 hoverScale badge rounded-pill text-bg-success text-uppercase">
+                                New
+                            </span>
+
+                            <div
+                                class="position-absolute bottom-0 end-0 bg-transparent w-100 px-3 py-2 d-flex align-items-center justify-content-end">
+                                <img class="ms-2 hoverScale" src="https://cdn-icons-png.flaticon.com/512/174/174854.png"
+                                    alt="" style="width: 20px;">
+                                <img class="ms-2 hoverScale" src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+                                    alt="" style="width: 20px;">
+                                <img class="ms-2 hoverScale"
+                                    src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt=""
+                                    style="width: 20px;">
+                                <img class="ms-2 hoverScale" src="https://cdn-icons-png.flaticon.com/512/919/919831.png"
+                                    alt="" style="width: 20px;">
+                                <img class="ms-2 hoverScale"
+                                    src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
+                                    style="width: 20px;">
+                            </div>
+                        </div>
+
+                        <div class="card-header d-flex align-items-center justify-content-center">
+                            <h5 class="card-title text-center text-uppercase">Card title</h5>
+                        </div>
+
+                        <div class="card-body d-flex flex-column" style="overflow-x: auto;">
+                            <p class=" card-text">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+
+                            <div>
+                                <div class="btn-group hoverScale">
+                                    <a href="#" class="btn btn-outline-primary">
+                                        Novidades da versão
+                                    </a>
+                                    <a href="#" class="btn btn-outline-primary">
+                                        <i class="fa-regular fa-newspaper"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer d-flex flex-row align-items-center mt-auto py-2 px-3">
+                            Contributors:
+                            <div class="ms-auto">
+                                <a href="https://github.com/Dev-Samuel-121" class="text-decoration-none  w-100">
+                                    <img src="https://avatars.githubusercontent.com/u/131566104?v=4"
+                                        class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                </a>
+                                <a href="https://github.com/Dev-Daniel-121" class="text-decoration-none  w-100">
+                                    <img src="https://avatars.githubusercontent.com/u/131566606?v=4"
+                                        class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-footer d-flex align-items-center justify-content-center">
+                            <div class="btn-group hoverScale">
+                                <a href="1. Wonderful tours/index.html"
+                                    class="btn btn-outline-success text-uppercase py-2 px-3" target="_blank">
+                                    Visit page
+                                </a>
+                                <a href="1. Wonderful tours/index.html" target="_blank"
+                                    class="btn btn-outline-success fa-solid fa-up-right-from-square text-center d-flex align-items-center">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <section id="backEnd" style="height: 100vh;">
+                    <div class="card col-3">
+                        <div class="rounded-2 rounded-bottom-0 image position-relative">
+                            <img src="https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="..." class="card-img-top" draggable="false">
+
+                            <span
+                                class="position-absolute top-0 end-0 m-2 px-3 py-2 hoverScale badge rounded-pill text-bg-success text-uppercase">
+                                New
+                            </span>
+
+                            <div
+                                class="position-absolute bottom-0 end-0 bg-transparent w-100 px-3 py-2 d-flex align-items-center justify-content-end">
+                                <img class="ms-2 hoverScale" src="https://cdn-icons-png.flaticon.com/512/174/174854.png"
+                                    alt="" style="width: 20px;">
+                                <img class="ms-2 hoverScale" src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+                                    alt="" style="width: 20px;">
+                                <img class="ms-2 hoverScale"
+                                    src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt=""
+                                    style="width: 20px;">
+                                <img class="ms-2 hoverScale" src="https://cdn-icons-png.flaticon.com/512/919/919831.png"
+                                    alt="" style="width: 20px;">
+                                <img class="ms-2 hoverScale"
+                                    src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""
+                                    style="width: 20px;">
+                            </div>
+                        </div>
+
+                        <div class="card-header d-flex align-items-center justify-content-center">
+                            <h5 class="card-title text-center text-uppercase">Card title</h5>
+                        </div>
+
+                        <div class="card-body d-flex flex-column" style="overflow-x: auto;">
+                            <p class=" card-text">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+
+                            <div>
+                                <div class="btn-group hoverScale">
+                                    <a href="#" class="btn btn-outline-primary">
+                                        Novidades da versão
+                                    </a>
+                                    <a href="#" class="btn btn-outline-primary">
+                                        <i class="fa-regular fa-newspaper"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer d-flex flex-row align-items-center mt-auto py-2 px-3">
+                            Contributors:
+                            <div class="ms-auto">
+                                <a href="https://github.com/Dev-Samuel-121" class="text-decoration-none  w-100">
+                                    <img src="https://avatars.githubusercontent.com/u/131566104?v=4"
+                                        class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                </a>
+                                <a href="https://github.com/Dev-Daniel-121" class="text-decoration-none  w-100">
+                                    <img src="https://avatars.githubusercontent.com/u/131566606?v=4"
+                                        class="rounded-circle hoverScale border border-light" style="width: 30px;
+                                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-footer d-flex align-items-center justify-content-center">
+                            <div class="btn-group hoverScale">
+                                <a href="1. Wonderful tours/index.html"
+                                    class="btn btn-outline-success text-uppercase py-2 px-3" target="_blank">
+                                    Visit page
+                                </a>
+                                <a href="1. Wonderful tours/index.html" target="_blank"
+                                    class="btn btn-outline-success fa-solid fa-up-right-from-square text-center d-flex align-items-center">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </main>
+
         </section>
     </main>
 
