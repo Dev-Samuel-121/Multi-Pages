@@ -98,16 +98,23 @@
 
 <body data-bs-theme="dark">
 
-    <main style="height: 100vh;">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
+    <nav class="navbar bg-body-tertiary h-100 d-flex align-items-center justify-content-center"
+        style="width: 5%; position:fixed; left: 0;">
+
+        <button type="button" class="btn btn-outline-primary">a</button>
+        <div class="h-100 w-100 ">
+            <a class="btn w-100 hoverScale" href="#">
+                <i class="bi bi-house"></i>
+            </a>
+            <form class="d-flex" role="search">
+                <button class="btn w-100 hoverScale" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <main class="float-end" style="height: 100vh; width: 95%;">
 
         <section id="main" class="d-flex align-items-center justify-content-center" style="height: 100vh;
         box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
