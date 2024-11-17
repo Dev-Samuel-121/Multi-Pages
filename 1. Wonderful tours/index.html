@@ -19,6 +19,10 @@
     <title>Wonderful tours</title>
 
     <style>
+        * {
+            transition: all 0.3s ease-in-out;
+        }
+
         #img-1 img {
             width: 200px;
             cursor: pointer;
@@ -36,12 +40,61 @@
             background-image: url('https://images.pexels.com/photos/2098428/pexels-photo-2098428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
         }
 
-        .transition-Hover {
+        #btn-1 {
+            border: none;
+            color: white;
+            padding: 13px 35px;
+            margin: 10px 0 20px 0;
+            transition: all 0.3s ease-in-out;
+            background-color: rgba(255, 68, 0, 0.533);
+        }
+
+        #btn-1:hover {
+            transform: scale(1.1);
+            background-color: rgb(31, 31, 42);
+        }
+
+        .hoverScale {
             transition: all 0.3s ease-in-out;
         }
 
-        .transition-Hover:hover {
+        .hoverScale:hover {
             transform: scale(1.1);
+        }
+
+        .card {
+            min-width: 30%;
+            max-width: 30%;
+            min-height: 69vh;
+            max-height: 69vh;
+            margin-bottom: 3em;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            height: 3rem;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 10%;
+            height: 10%;
+            margin-top: auto;
+        }
+
+        .image {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image:hover img {
+            width: 110%;
         }
     </style>
 </head>
@@ -51,11 +104,10 @@
     <nav class="navbar px-5 fixed-top" style="background-color: rgba(106, 106, 106, 0.189); backdrop-filter: blur(10px);
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="container-fluid px-5 py-1">
-            <a class="navbar-brand h1 fs-3 transition-Hover" href="index.html">
-                <img
-                    src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/a6c2db37762a57b7904508f8/rrr.png"
+            <a class="navbar-brand h1 fs-3 hoverScale" href="index.html">
+                <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/a6c2db37762a57b7904508f8/rrr.png"
                     alt="..." style="width: 100px" class="m-0 p-0" draggable="false">
-                </a>
+            </a>
             <form class="d-flex ms-auto" role="search">
                 <div class="input-group">
                     <input class="form-control fs-5" type="search" placeholder="Search" aria-label="Search">
@@ -67,9 +119,9 @@
         </div>
     </nav>
 
-    <main style="height: 100vh;">
+    <main style="height: 100vh;" class="container-fluid m-0 p-0">
 
-        <section class="h-100" id="sec1" style="height: 100vh; padding-top: 75px;">
+        <section class="vh-100" id="sec1" style="padding-top: 75px;">
             <div class=" container d-flex justify-content-center flex-column h-100">
                 <div class="row display-6 fs-5 justify-content-center">
                     TRAVEL AGENCY
@@ -92,12 +144,287 @@
 
                 <div class="row d-flex align-items-center justify-content-center">
                     <button
-                        class="btn btn-outline-light text-uppercase fs-3 py-3 px-5 fs-6 mt-5 transition-Hover rounded-pill"
+                        class="btn btn-outline-light text-uppercase fs-3 py-3 px-5 fs-6 mt-5 hoverScale rounded-pill"
                         type="button"
                         style="width: auto;
                         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">Read
                         more</button>
                 </div>
+            </div>
+        </section>
+        <section class="vh-100 container" id="AboutUs" style="padding-top: 75px;">
+            <div class="d-flex flex-row vh-100">
+                <div class="col-6 h-100">
+                    <h2 class="h2">
+                        <a href="#AboutUs" class="h2 text-decoration-none">About Us</a>
+                    </h2>
+                    <p class="lead">A life's work of embracing both the creative and the quantitative, developing
+                        thriving
+                        online businesses
+                        and enviable brands.</p>
+                    <div class="text-bg-light p-4 rounded-4 col-8 float-end">
+                        <p>Sit amet massa vitae tortor condimentum lacinia quis. Ornare arcu dui vivamus arcu
+                            felis bibendum
+                            ut. Consectetur adipiscing elit duis tristique sollicitudin. Volutpat lacus laoreet non
+                            curabitur. Magna fringilla urna porttitor rhoncus. Ultricies leo integer malesuada nunc vel
+                            risus commodo viverra. Ipsum a arcu cursus vitae congue. Imperdiet dui accumsan sit amet
+                            nulla
+                            facilisi. Tincidunt dui ut ornare lectus sit. Phasellus faucibus scelerisque eleifend donec
+                            pretium vulputate sapien nec. Eget gravida cum sociis natoque. </p>
+                        <button type="button" id="btn-1" class="text-uppercase hoverScale rounded-pill">Read
+                            More</button>
+                    </div>
+                </div>
+                <div class="col-6 h-100 mt-auto">
+
+                    <div class="d-flex align-items-center justify-content-center flex-column">
+                        <div style="width: 420px; height: 400px; overflow: hidden;" class="rounded-circle ">
+
+                            <img src="https://media.istockphoto.com/id/1153216757/pt/foto/group-of-smiling-friends-traveling-friendship-travel-vacation-summer-and-people-concept.jpg?s=1024x1024&w=is&k=20&c=dRci9qikta2Tk_fZBpaq4vMNg1gl6iE8xPWJ-tQxais="
+                                alt="Descrição da imagem" class="rounded-circle hoverScale"
+                                style="object-fit: cover; width: 100%; height: 100%; object-position: -68px 0px;"
+                                draggable="false">
+
+                        </div>
+
+                        <span class="ms-auto my-4 mx-5">Images from <a class="text-light fst-italic" href="pexels.com"
+                                target="_blank">iStock</a></span>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" style="height: 80vh;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100">
+                        <div class="d-flex align-items-center justify-content-center h-100">
+                            <div class="card col-3 mx-3 rounded-5">
+                                <div class="rounded-top-5 overflow-hidden image">
+                                    <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="card-img-top" alt="..." draggable="false">
+                                </div>
+                                <div class="card-body h-100">
+                                    <h5 class="card-title h4">Mountains</h5>
+                                    <p class="card-text lead" style="font-size: 17px;">Sample text. Click to
+                                        select the
+                                        text box. Click
+                                        again or
+                                        double click to start editing the text.</p>
+                                </div>
+                                <div class="card-footer rounded-bottom-5">
+                                    <a href="#"
+                                        class="btn btn-outline-primary d-flex align-items-center justify-content-center rounded-bottom-5 hoverScale"
+                                        style="width: 100%; height: 3em;">
+                                        <span class="text-uppercase lead">More</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card col-3 mx-3 rounded-5">
+                                <div class="rounded-top-5 overflow-hidden image">
+                                    <img src="https://images.pexels.com/photos/831088/pexels-photo-831088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body h-100">
+                                    <h5 class="card-title h4">Waterfalls</h5>
+                                    <p class="card-text lead" style="font-size: 17px;">Sample text. Click to
+                                        select the
+                                        text box. Click
+                                        again or
+                                        double click to start editing the text.</p>
+                                </div>
+                                <div class="card-footer rounded-bottom-5">
+                                    <a href="#"
+                                        class="btn btn-outline-primary d-flex align-items-center justify-content-center rounded-bottom-5 hoverScale"
+                                        style="width: 100%; height: 3em;">
+                                        <span class="text-uppercase lead">More</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card col-3 mx-3 rounded-5">
+                                <div class="rounded-top-5 overflow-hidden image">
+                                    <img src="https://images.pexels.com/photos/2169857/pexels-photo-2169857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="card-img-top rounded-top-5" alt="...">
+                                </div>
+                                <div class="card-body h-100">
+                                    <h5 class="card-title h4">Road Travel</h5>
+                                    <p class="card-text lead" style="font-size: 17px;">Sample text. Click to
+                                        select the
+                                        text box. Click
+                                        again or
+                                        double click to start editing the text.</p>
+                                </div>
+                                <div class="card-footer rounded-bottom-5">
+                                    <a href="#"
+                                        class="btn btn-outline-primary d-flex align-items-center justify-content-center rounded-bottom-5 hoverScale"
+                                        style="width: 100%; height: 3em;">
+                                        <span class="text-uppercase lead">More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item h-100">
+                        <div class="d-flex align-items-center justify-content-center h-100">
+                            <div class="card col-3 mx-3 rounded-5">
+                                <div class="rounded-top-5 overflow-hidden image">
+                                    <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="card-img-top" alt="..." draggable="false">
+                                </div>
+                                <div class="card-body h-100">
+                                    <h5 class="card-title h4">Mountains</h5>
+                                    <p class="card-text lead" style="font-size: 17px;">Sample text. Click to
+                                        select the
+                                        text box. Click
+                                        again or
+                                        double click to start editing the text.</p>
+                                </div>
+                                <div class="card-footer rounded-bottom-5">
+                                    <a href="#"
+                                        class="btn btn-outline-primary d-flex align-items-center justify-content-center rounded-bottom-5 hoverScale"
+                                        style="width: 100%; height: 3em;">
+                                        <span class="text-uppercase lead">More</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card col-3 mx-3 rounded-5">
+                                <div class="rounded-top-5 overflow-hidden image">
+                                    <img src="https://images.pexels.com/photos/831088/pexels-photo-831088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body h-100">
+                                    <h5 class="card-title h4">Waterfalls</h5>
+                                    <p class="card-text lead" style="font-size: 17px;">Sample text. Click to
+                                        select the
+                                        text box. Click
+                                        again or
+                                        double click to start editing the text.</p>
+                                </div>
+                                <div class="card-footer rounded-bottom-5">
+                                    <a href="#"
+                                        class="btn btn-outline-primary d-flex align-items-center justify-content-center rounded-bottom-5 hoverScale"
+                                        style="width: 100%; height: 3em;">
+                                        <span class="text-uppercase lead">More</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card col-3 mx-3 rounded-5">
+                                <div class="rounded-top-5 overflow-hidden image">
+                                    <img src="https://images.pexels.com/photos/2169857/pexels-photo-2169857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="card-img-top rounded-top-5" alt="...">
+                                </div>
+                                <div class="card-body h-100">
+                                    <h5 class="card-title h4">Road Travel</h5>
+                                    <p class="card-text lead" style="font-size: 17px;">Sample text. Click to
+                                        select the
+                                        text box. Click
+                                        again or
+                                        double click to start editing the text.</p>
+                                </div>
+                                <div class="card-footer rounded-bottom-5">
+                                    <a href="#"
+                                        class="btn btn-outline-primary d-flex align-items-center justify-content-center rounded-bottom-5 hoverScale"
+                                        style="width: 100%; height: 3em;">
+                                        <span class="text-uppercase lead">More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item h-100">
+                        <div class="d-flex align-items-center justify-content-center h-100">
+                            <div class="card col-3 mx-3 rounded-5">
+                                <div class="rounded-top-5 overflow-hidden image">
+                                    <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="card-img-top" alt="..." draggable="false">
+                                </div>
+                                <div class="card-body h-100">
+                                    <h5 class="card-title h4">Mountains</h5>
+                                    <p class="card-text lead" style="font-size: 17px;">Sample text. Click to
+                                        select the
+                                        text box. Click
+                                        again or
+                                        double click to start editing the text.</p>
+                                </div>
+                                <div class="card-footer rounded-bottom-5">
+                                    <a href="#"
+                                        class="btn btn-outline-primary d-flex align-items-center justify-content-center rounded-bottom-5 hoverScale"
+                                        style="width: 100%; height: 3em;">
+                                        <span class="text-uppercase lead">More</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card col-3 mx-3 rounded-5">
+                                <div class="rounded-top-5 overflow-hidden image">
+                                    <img src="https://images.pexels.com/photos/831088/pexels-photo-831088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body h-100">
+                                    <h5 class="card-title h4">Waterfalls</h5>
+                                    <p class="card-text lead" style="font-size: 17px;">Sample text. Click to
+                                        select the
+                                        text box. Click
+                                        again or
+                                        double click to start editing the text.</p>
+                                </div>
+                                <div class="card-footer rounded-bottom-5">
+                                    <a href="#"
+                                        class="btn btn-outline-primary d-flex align-items-center justify-content-center rounded-bottom-5 hoverScale"
+                                        style="width: 100%; height: 3em;">
+                                        <span class="text-uppercase lead">More</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card col-3 mx-3 rounded-5">
+                                <div class="rounded-top-5 overflow-hidden image">
+                                    <img src="https://images.pexels.com/photos/2169857/pexels-photo-2169857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="card-img-top rounded-top-5" alt="...">
+                                </div>
+                                <div class="card-body h-100">
+                                    <h5 class="card-title h4">Road Travel</h5>
+                                    <p class="card-text lead" style="font-size: 17px;">Sample text. Click to
+                                        select the
+                                        text box. Click
+                                        again or
+                                        double click to start editing the text.</p>
+                                </div>
+                                <div class="card-footer rounded-bottom-5">
+                                    <a href="#"
+                                        class="btn btn-outline-primary d-flex align-items-center justify-content-center rounded-bottom-5 hoverScale"
+                                        style="width: 100%; height: 3em;">
+                                        <span class="text-uppercase lead">More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
 
