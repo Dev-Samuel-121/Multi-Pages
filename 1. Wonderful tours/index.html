@@ -57,6 +57,20 @@
             background-color: rgb(31, 31, 42);
         }
 
+        #btn-2 {
+            border: none;
+            color: white;
+            padding: 13px 35px;
+            margin: 10px 0 20px 0;
+            transition: all 0.3s ease-in-out;
+            background-color: rgba(255, 68, 0, 0.533);
+        }
+
+        #btn-2:hover {
+            transform: scale(1.1);
+            background-color: rgb(31, 31, 42);
+        }
+
         /* ======================== */
 
         .hoverScale {
@@ -84,6 +98,17 @@
 
         .card-body {
             height: 3rem;
+        }
+
+        .card-2 {
+            min-width: 23%;
+            max-width: 23%;
+            min-height: 39vh;
+            max-height: 39vh;
+            margin-bottom: 3em;
+            backdrop-filter: blur(10px);
+            background-color: rgba(43, 48, 53, 0.294);
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         }
 
         .carousel-control-prev,
@@ -226,6 +251,15 @@
         .item8 {
             animation-delay: calc(50s / 8 * (8 - 8) * -1);
         }
+
+        /* ======================== */
+
+        #c1 {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            border: 10px solid orangered;
+        }
     </style>
 </head>
 
@@ -273,36 +307,131 @@
                 </div>
 
                 <div class="row d-flex align-items-center justify-content-center">
-                    <button
-                        class="btn btn-outline-light text-uppercase fs-3 py-3 px-5 fs-6 mt-5 hoverScale rounded-pill"
-                        type="button"
+                    <button type="button"
+                        class="btn btn-outline-light text-uppercase fs-3 mt-5 hoverScale rounded-pill lead"
                         style="width: auto;
-                        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">Read
-                        more</button>
+                        padding: 20px 70px;
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">
+                        Read more
+                    </button>
                 </div>
             </div>
         </section>
 
-        <section class="container" id="AboutUs" style="padding-top: 75px; min-height: 100vh;">
+        <section class="container" id="AboutUs" style="padding-top: 75px; min-height: 100vh; position: relative;">
+            <div class="w-100 d-flex align-items-center justify-content-around flex-row"
+                style="position: absolute; top: -55px; left: 0;">
+
+                <div class="card card-2 rounded-5 d-flex align-items-center justify-content-around flex-column p-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2652/2652596.png" class="card-img-top m-0 p-0"
+                            alt="..." style="
+                        width: 6rem; margin-bottom: 2.3rem !important;
+                        " draggable="false">
+                    </div>
+                    <div
+                        class="card-body h-100 d-flex align-items-center justify-content-center flex-column p-0 m-0 h-100">
+                        <h5 class="card-title text-uppercase display-5 text-center p-0 w-100"
+                            style="font-size: 1.6rem; font-weight: 350;">
+                            Traveller Tours
+                        </h5>
+                        <p class="card-text text-center lead mt-auto mb-2" style="width: 90%; font-size: 1rem;">
+                            Sample text.
+                            Click to select the text box.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card-2 rounded-5 d-flex align-items-center justify-content-around flex-column p-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/7894/7894182.png" class="card-img-top m-0 p-0"
+                            alt="..." style="
+                        width: 7rem; margin-bottom: 1.3rem !important;
+                        " draggable="false">
+                    </div>
+                    <div
+                        class="card-body h-100 d-flex align-items-center justify-content-center flex-column p-0 m-0 h-100">
+                        <h5 class="card-title text-uppercase display-5 text-center p-0 w-100"
+                            style="font-size: 1.6rem; font-weight: 350;">
+                            Explore World
+                        </h5>
+                        <p class="card-text text-center lead mt-auto mb-2" style="width: 90%; font-size: 1rem;">
+                            Sample text.
+                            Click to select the text box.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card-2 rounded-5 d-flex align-items-center justify-content-around flex-column p-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/13538/13538120.png"
+                            class="card-img-top m-0 p-0" alt="..." style="
+                        width: 8rem; margin-bottom: 0.13rem !important;
+                        " draggable="false">
+                    </div>
+                    <div
+                        class="card-body h-100 d-flex align-items-center justify-content-center flex-column p-0 m-0 h-100">
+                        <h5 class="card-title text-uppercase display-5 text-center p-0 w-100"
+                            style="font-size: 1.6rem; font-weight: 350;">
+                            Adventure
+                        </h5>
+                        <p class="card-text text-center lead mt-auto mb-2" style="width: 90%; font-size: 1rem;">
+                            Sample text.
+                            Click to select the text box.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card-2 rounded-5 d-flex align-items-center justify-content-around flex-column p-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/10365/10365088.png"
+                            class="card-img-top m-0 p-0" alt="..." style="
+                        width: 7rem; margin-bottom: 1.13rem !important;
+                        " draggable="false">
+                    </div>
+                    <div
+                        class="card-body h-100 d-flex align-items-center justify-content-center flex-column p-0 m-0 h-100">
+                        <h5 class="card-title text-uppercase display-5 text-center p-0 w-100"
+                            style="font-size: 1.6rem; font-weight: 350;">
+                            Luxurious
+                        </h5>
+                        <p class="card-text text-center lead mt-auto mb-2" style="width: 90%; font-size: 1rem;">
+                            Sample text.
+                            Click to select the text box.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class=" container" id="AboutUs" style="padding-top: 75px; min-height: 100vh;">
             <div class="d-flex flex-row vh-100">
                 <div class="col-6 h-100">
                     <h2 class="h2">
                         <a href="#AboutUs" class="h2 text-decoration-none">About Us</a>
                     </h2>
-                    <p class="lead">A life's work of embracing both the creative and the quantitative, developing
+                    <p class="lead">A life's work of embracing both the creative and the quantitative,
+                        developing
                         thriving
                         online businesses
                         and enviable brands.</p>
                     <div class="text-bg-light p-4 rounded-4 col-8 float-end">
-                        <p>Sit amet massa vitae tortor condimentum lacinia quis. Ornare arcu dui vivamus arcu
+                        <p>Sit amet massa vitae tortor condimentum lacinia quis. Ornare arcu dui vivamus
+                            arcu
                             felis bibendum
-                            ut. Consectetur adipiscing elit duis tristique sollicitudin. Volutpat lacus laoreet non
-                            curabitur. Magna fringilla urna porttitor rhoncus. Ultricies leo integer malesuada nunc vel
-                            risus commodo viverra. Ipsum a arcu cursus vitae congue. Imperdiet dui accumsan sit amet
+                            ut. Consectetur adipiscing elit duis tristique sollicitudin. Volutpat lacus
+                            laoreet non
+                            curabitur. Magna fringilla urna porttitor rhoncus. Ultricies leo integer
+                            malesuada nunc vel
+                            risus commodo viverra. Ipsum a arcu cursus vitae congue. Imperdiet dui accumsan
+                            sit amet
                             nulla
-                            facilisi. Tincidunt dui ut ornare lectus sit. Phasellus faucibus scelerisque eleifend donec
+                            facilisi. Tincidunt dui ut ornare lectus sit. Phasellus faucibus scelerisque
+                            eleifend donec
                             pretium vulputate sapien nec. Eget gravida cum sociis natoque. </p>
-                        <button type="button" id="btn-1" class="text-uppercase hoverScale rounded-pill">Read
+                        <button type="button" id="btn-2" class="text-uppercase hoverScale rounded-pill">Read
                             More</button>
                     </div>
                 </div>
@@ -497,69 +626,70 @@
             <div class="wrapper">
                 <div class="itemLeft item1">
                     <img src="https://images.pexels.com/photos/29381897/pexels-photo-29381897/free-photo-of-processado-com-vsco-com-4-predefinicoes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Image 1">
+                        alt="Image 1" draggable="false">
                 </div>
                 <div class="itemLeft item2">
                     <img src="https://images.pexels.com/photos/25462218/pexels-photo-25462218/free-photo-of-mar-panorama-vista-paisagem.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Image 2">
+                        alt="Image 2" draggable="false">
                 </div>
                 <div class="itemLeft item3">
                     <img src="https://images.pexels.com/photos/29420823/pexels-photo-29420823/free-photo-of-pinaculo-gotico-ornamentado-contra-ceu-claro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Image 3">
+                        alt="Image 3" draggable="false">
                 </div>
                 <div class="itemLeft item4">
                     <img src="https://images.pexels.com/photos/4058519/pexels-photo-4058519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Image 4">
+                        alt="Image 4" draggable="false">
                 </div>
                 <div class="itemLeft item5">
                     <img src="https://images.pexels.com/photos/8968660/pexels-photo-8968660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Image 5">
+                        alt="Image 5" draggable="false">
                 </div>
                 <div class="itemLeft item6">
                     <img src="https://images.pexels.com/photos/18875997/pexels-photo-18875997/free-photo-of-pequena-cidade-perto-de-hallstatter-see.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Image 6">
+                        alt="Image 6" draggable="false">
                 </div>
                 <div class="itemLeft item7">
                     <img src="https://images.pexels.com/photos/29298931/pexels-photo-29298931.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Image 7">
+                        alt="Image 7" draggable="false">
                 </div>
                 <div class="itemLeft item8">
                     <img src="https://images.pexels.com/photos/831088/pexels-photo-831088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Image 8">
+                        alt="Image 8" draggable="false">
                 </div>
             </div>
 
             <div class="wrapper">
                 <div class="itemRight item1">
                     <img src="https://images.pexels.com/photos/29432826/pexels-photo-29432826/free-photo-of-nascer-do-sol-sereno-no-cove-island-park.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Image 1">
+                        alt="Image 1" draggable="false">
                 </div>
                 <div class="itemRight item2">
                     <img src="https://images.pexels.com/photos/16036299/pexels-photo-16036299/free-photo-of-panorama-vista-paisagem-por-do-sol.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Image 2">
+                        alt="Image 2" draggable="false">
                 </div>
                 <div class="itemRight item3">
                     <img src="https://images.pexels.com/photos/1475248/pexels-photo-1475248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Image 3">
+                        alt="Image 3" draggable="false">
                 </div>
                 <div class="itemRight item4">
                     <img src="https://images.pexels.com/photos/2882599/pexels-photo-2882599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Image 4">
+                        alt="Image 4" draggable="false">
                 </div>
                 <div class="itemRight item5">
                     <img src="https://images.pexels.com/photos/29421050/pexels-photo-29421050/free-photo-of-vista-aerea-dramatica-do-lago-e-dos-canions-em-utah.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Image 5">
+                        alt="Image 5" draggable="false">
                 </div>
                 <div class="itemRight item6">
                     <img src="https://images.pexels.com/photos/29402929/pexels-photo-29402929/free-photo-of-por-do-sol-no-brasil.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Image 6">
+                        alt="Image 6" draggable="false">
                 </div>
                 <div class="itemRight item7">
-                    <img src="https://images.pexels.com/photos/12366046/pexels-photo-12366046.jpeg" alt="Image 7">
+                    <img src="https://images.pexels.com/photos/12366046/pexels-photo-12366046.jpeg" alt="Image 7"
+                        draggable="false">
                 </div>
                 <div class="itemRight item8">
                     <img src="https://images.pexels.com/photos/1684504/pexels-photo-1684504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Image 8">
+                        alt="Image 8" draggable="false">
                 </div>
             </div>
 
