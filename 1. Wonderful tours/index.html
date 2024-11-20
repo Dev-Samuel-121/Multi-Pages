@@ -22,6 +22,10 @@
             transition: all 0.3s ease-in-out;
         }
 
+        .navbar {
+            z-index: 100000000000000000000;
+        }
+
         /* ======================== */
 
         #img-1 img {
@@ -300,12 +304,24 @@
             height: 15rem;
             border: 2.7rem solid rgb(124, 124, 124);
         }
+
+        #c6 {
+            width: 35rem;
+            height: 35rem;
+            cursor: pointer;
+        }
+
+        #c7 {
+            width: 7rem;
+            height: 7rem;
+            border: 1.2rem solid rgb(218, 110, 72);
+        }
     </style>
 </head>
 
 <body data-bs-theme="dark">
 
-    <!-- <nav class="navbar px-5 fixed-top" style="background-color: rgba(106, 106, 106, 0.189); backdrop-filter: blur(10px);
+    <nav class="navbar px-5 fixed-top" style="background-color: rgba(106, 106, 106, 0.189); backdrop-filter: blur(10px);
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <div class="container-fluid px-5 py-1">
             <a class="navbar-brand h1 fs-3 hoverScale" href="index.html">
@@ -321,7 +337,7 @@
                 </div>
             </form>
         </div>
-    </nav> -->
+    </nav>
 
     <main style="height: 100vh;" class="container-fluid m-0 p-0">
 
@@ -693,6 +709,31 @@
 
             </div>
 
+        </section>
+
+        <section class="container" id="Freedom" style="padding-top: 75px; min-height: 100vh; position: relative;">
+            <div class="w-100 p-0 m-0 d-flex align-items-center justify-content-center">
+
+                <div class="vh-100 d-flex align-items-center col-8" style="position: relative;">
+                    <a class="circle circle-img" id="c6" href="#Freedom" style="position: absolute; right: 0;">
+                        <img src="https://images.pexels.com/photos/11118714/pexels-photo-11118714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="...">
+                    </a>
+                    <a class="text-light text-decoration-none fst-italic text-center" href="#Freedom"
+                        style="font-size: 90px; font-weight: 400; z-index: 1000;">Freedom</a>
+                </div>
+            </div>
+            <p class="lead col-4 ms-auto text-end" style="margin-right: 10rem;">Duis aute irure dolor in reprehenderit
+                in
+                voluptate velit
+                esse
+                cillum
+                dolore
+                eu fugiat
+                nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.</p>
+            <div class="circle" id="c7" style="position: absolute; bottom: -2%; left: 15%;"></div>
         </section>
 
         <section class="container d-flex align-items-center justify-content-center flex-column" id="sec4"
