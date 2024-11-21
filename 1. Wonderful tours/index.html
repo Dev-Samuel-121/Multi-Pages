@@ -76,6 +76,20 @@
             background-color: rgb(31, 31, 42);
         }
 
+        .btn-3 {
+            border: none;
+            color: white;
+            padding: 13px 35px;
+            margin: 10px 0 20px 0;
+            transition: all 0.3s ease-in-out;
+            background-color: rgb(31, 31, 42);
+        }
+
+        .btn-3:hover {
+            transform: scale(1.1);
+            background-color: rgba(255, 68, 0, 0.533);
+        }
+
         /* ======================== */
 
         .hoverScale {
@@ -316,6 +330,24 @@
             height: 7rem;
             border: 1.2rem solid rgb(218, 110, 72);
         }
+
+        #c8 {
+            width: 9rem;
+            height: 9rem;
+            z-index: 10000;
+            background-color: rgb(218, 110, 72);
+        }
+
+        #c9 {
+            width: 40rem;
+            height: 40rem;
+        }
+
+        #c10 {
+            width: 15rem;
+            height: 15rem;
+            border: 2.5rem solid rgb(124, 124, 124);
+        }
     </style>
 </head>
 
@@ -496,7 +528,7 @@
 
         </section>
 
-        <section class="container" id="AboutUs" style="padding-top: 55px; min-height: 100vh;">
+        <section class="container" id="AboutUs" style="padding-top: 85px; min-height: 100vh;">
             <div class="d-flex flex-row vh-100">
                 <div class="col-6 h-100">
                     <h2 class="h2">
@@ -711,7 +743,7 @@
 
         </section>
 
-        <section class="container" id="Freedom" style="padding-top: 75px; min-height: 100vh; position: relative;">
+        <section class="container" id="Freedom" style="min-height: 100vh; position: relative;">
             <div class="w-100 p-0 m-0 d-flex align-items-center justify-content-center">
 
                 <div class="vh-100 d-flex align-items-center col-8" style="position: relative;">
@@ -736,7 +768,7 @@
             <div class="circle" id="c7" style="position: absolute; bottom: -2%; left: 15%;"></div>
         </section>
 
-        <section class="container d-flex align-items-center justify-content-center flex-column" id="sec4"
+        <section class="container d-flex align-items-center justify-content-center flex-column" id="sec3"
             style="min-height: 120vh;">
             <div class="wrapper">
                 <div class="itemLeft item1">
@@ -808,6 +840,41 @@
                 </div>
             </div>
 
+        </section>
+
+        <section class="container vh-100 d-flex align-items-center justify-content-center flex-column w-100" id="sec4"
+            style="position: relative;">
+            <div class="circle" id="c8" style="position: absolute; bottom: 5%; left: 5%;"></div>
+            <a class="circle circle-img" id="c9" href="#sec4"
+                style="position: absolute; bottom: 5%; left: 5%; z-index: 1000;">
+                <img src="https://images.pexels.com/photos/2450296/pexels-photo-2450296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="...">
+            </a>
+            <div class="circle" id="c10" style="position: absolute; top: -10%; right: 15%;"></div>
+            <div class="d-flex align-items-end justify-content-end flex-column w-100 px-5"
+                style="min-height: 140vh; margin-right: 2rem;">
+
+                <div class="text-bg-light rounded-4 col-6 d-flex align-items-start justify-content-start flex-column p-5"
+                    style="z-index: 1000;">
+                    <a class="h1 fst-italic text-decoration-none" href=" #sec4"
+                        style="font-size: 3rem; font-weight: 500;">Hot Air Balloon
+                        Festival
+                    </a>
+
+                    <p class="lead" style="font-weight: 400; margin-top: 2rem;">Article evident arrived express highest
+                        men did boy.
+                        Mistress sensible entirely am
+                        so. Quick can
+                        manor smart money hopes worth too.
+                    </p>
+
+                    <span class="lead my-2 mb-4" style="font-weight: 400;">Images from <a class="text-black fst-italic"
+                            href="pexels.com" target="_blank">iStock</a></span>
+
+                    <button type="button" class="text-uppercase hoverScale rounded-pill btn-3">Read
+                        More</button>
+                </div>
+            </div>
         </section>
 
     </main>
