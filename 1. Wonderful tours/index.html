@@ -160,21 +160,69 @@
 
             </div>
 
-            <div class="w-auto" style="position: relative; min-height: 100vh; margin-top: 280px;">
-                <div class="circle circle-img" id="c1" style="position: absolute; top: 6%; left: 16%;">
-                    <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="...">
+            <div id="carouselCircle" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCircle" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCircle" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselCircle" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <div class="circle" id="c2" style="position: absolute; bottom: 45%; left: 11%;"></div>
-                <div class="circle circle-img" id="c3" style="position: absolute; bottom: 4%; left: 20%;">
-                    <img src="https://images.pexels.com/photos/1324803/pexels-photo-1324803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="...">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="w-auto mb-5" style="position: relative; min-height: 100vh; margin-top: 280px;">
+                            <div class="circle circle-img" id="c1" style="position: absolute; top: 6%; left: 16%;">
+                                <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="..." draggable="false">
+                            </div>
+                            <div class="circle" id="c2" style="position: absolute; bottom: 45%; left: 11%;"></div>
+                            <div class="circle circle-img" id="c3" style="position: absolute; bottom: 4%; left: 20%;">
+                                <img src="https://images.pexels.com/photos/1324803/pexels-photo-1324803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="..." draggable="false">
+                            </div>
+                            <div class="circle circle-img" id="c4" style="position: absolute; top: 3%; right: 12%;">
+                                <img src="https://images.pexels.com/photos/1001430/pexels-photo-1001430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="..." draggable="false">
+                            </div>
+                            <div class="circle" id="c5" style="position: absolute; bottom: 2%; right: 14%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="w-auto  mb-5" style="position: relative; min-height: 100vh; margin-top: 280px;">
+                            <div class="circle circle-img" id="c11" style="position: absolute; bottom: 5%; right: 17%;">
+                                <img src="https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="..." draggable="false">
+                            </div>
+                            <div class="circle" id="c12" style="position: absolute; top: 45%; right: 11%;"></div>
+                            <div class="circle circle-img" id="c13" style="position: absolute; top: 4%; right: 20%;">
+                                <img src="https://images.pexels.com/photos/1670187/pexels-photo-1670187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="..." draggable="false">
+                            </div>
+                            <div class="circle circle-img" id="c14" style="position: absolute; bottom: 3%; left: 12%;">
+                                <img src="https://images.pexels.com/photos/1672813/pexels-photo-1672813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="..." draggable="false">
+                            </div>
+                            <div class="circle" id="c15" style="position: absolute; top: 2%; left: 14%;"></div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCircle"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCircle"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
                 </div>
-                <div class="circle circle-img" id="c4" style="position: absolute; top: 3%; right: 12%;">
-                    <img src="https://images.pexels.com/photos/1001430/pexels-photo-1001430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="...">
-                </div>
-                <div class="circle" id="c5" style="position: absolute; bottom: 2%; right: 14%;"></div>
             </div>
 
             <div class="w-100 d-flex align-items-center justify-content-around my-5">
@@ -243,12 +291,12 @@
                 </div>
 
             </div>
-            <div id="carouselExampleIndicators" class="carousel slide" style="height: 80vh;" data-bs-ride="carousel">
+            <div id="carouselCards" class="carousel slide" style="height: 80vh;" data-bs-ride="carousel">
 
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
                 </div>
 
@@ -395,12 +443,12 @@
                     </div>
 
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCards"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCards"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
@@ -416,7 +464,7 @@
                 <div class="vh-100 d-flex align-items-center col-8" style="position: relative;">
                     <a class="circle circle-img" id="c6" href="#Freedom" style="position: absolute; right: 0;">
                         <img src="https://images.pexels.com/photos/11118714/pexels-photo-11118714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="...">
+                            alt="..." draggable="false">
                     </a>
                     <a class="text-light text-decoration-none fst-italic text-center" href="#Freedom"
                         style="font-size: 90px; font-weight: 400; z-index: 1000;">Freedom</a>
@@ -515,7 +563,7 @@
             <a class="circle circle-img" id="c9" href="#sec4"
                 style="position: absolute; bottom: 5%; left: 5%; z-index: 1000;">
                 <img src="https://images.pexels.com/photos/2450296/pexels-photo-2450296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="...">
+                    alt="..." draggable="false">
             </a>
             <div class="circle" id="c10" style="position: absolute; top: -10%; right: 15%;"></div>
             <div class="d-flex align-items-end justify-content-end flex-column w-100 px-5"
