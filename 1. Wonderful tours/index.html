@@ -877,13 +877,68 @@
             </div>
         </section>
 
-        <section
-            class="container d-flex align-items-center justify-content-center flex-column w-100 border border-light"
-            id="GetInTouch" style="min-height: 100vh; padding-top: 15rem;">
+        <section class="container d-flex align-items-center justify-content-center flex-column w-100"
+            style="min-height: 100vh; padding-top: 15rem;">
 
-            <div class="w-100 d-flex align-items-center justify-content-center border border-light vh-100">
+            <div class="w-100 d-flex align-items-center justify-content-center flex-column vh-100" id="GetInTouch">
 
-                <!-- !! CÓDIGO DO GetInTouch - FAÇA APENAS AS ESTILIZAÇÕES SE TIVER ALGUM PROBLEMA ME AVISA PARA LOGO PODEMOS RESOLVER -->
+                <a href="#GetInTouch" class="h3 text-decoration-none" style="font-size: 4rem;">Get in touch</a>
+
+                <div class="col-9 mt-5">
+
+                    <form class="g-3 needs-validation" novalidate="">
+                        <div class="row d-flex align-items-center justify-content-between mb-4">
+
+                            <div class="input-group" style="width: 50%;">
+                                <span class="input-group-text">
+                                    <i class="bi bi-person-fill"></i>
+                                </span>
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="floatingInputGroup1"
+                                        placeholder="Username" required>
+                                    <label for="floatingInputGroup1">Username</label>
+                                </div>
+                            </div>
+
+                            <div class="input-group" style="width: 50%;">
+                                <span class="input-group-text">
+                                    <i class="bi bi-envelope-at"></i>
+                                </span>
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInputValue"
+                                        placeholder="name@example.com" required>
+                                    <label for="floatingInputValue">Email</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="input-group">
+                            <div class="form-floating mb-5">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px; max-height: 200px;"></textarea>
+                                <label for="floatingTextarea2">Comments</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Agree to terms and conditions
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" style="height: 3rem;">
+                            <button class="btn btn-outline-primary w-100 h-100 rounded-5" type="submit">Submit
+                                form</button>
+                        </div>
+                    </form>
+
+                </div>
 
             </div>
 
