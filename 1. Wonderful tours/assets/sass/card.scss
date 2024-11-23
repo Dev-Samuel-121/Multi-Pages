@@ -1,0 +1,27 @@
+.card {
+    min-width: 30%;
+    max-width: 30%;
+    min-height: 69vh;
+    max-height: 69vh;
+    margin-bottom: 3em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.card-body {
+    height: 3rem;
+}
+
+.card-2 {
+    min-width: 23%;
+    max-width: 23%;
+    min-height: 39vh;
+    max-height: 39vh;
+    margin-bottom: 3em;
+    backdrop-filter: blur(10px);
+    background-color: rgba(43, 48, 53, 0.294);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}

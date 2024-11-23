@@ -1,0 +1,12 @@
+.image {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        img {
+            width: 110%;
+        }
+    }
+}
