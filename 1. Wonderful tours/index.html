@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <!-- META TAGS -->
@@ -10,72 +10,611 @@
     <meta name="description" content="">
 
     <!-- LINKS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==">
     <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/main.min.css">
     <title>Wonderful tours</title>
 </head>
 
-<body class="text-bg-dark">
+<body data-bs-theme="dark">
 
-    <section id="section2">
-        <section class="container-fluid row m-auto" id="cont-cards">
-            <div class="card col mx-1">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="bi bi-luggage-fill"></i> Traveller Tours</h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">Sample text. Click to select the text box.</h6>
+    <nav class="navbar px-5 fixed-top" style="background-color: rgba(106, 106, 106, 0.189); backdrop-filter: blur(10px);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+        <div class="container-fluid px-5 py-1">
+            <a class="navbar-brand h1 fs-3 hoverScale" href="index.html">
+                <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/a6c2db37762a57b7904508f8/rrr.png"
+                    alt="..." style="width: 100px" class="m-0 p-0" draggable="false">
+            </a>
+            <form class="d-flex ms-auto" role="search">
+                <div class="input-group">
+                    <input class="form-control fs-5" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success fs-5 py-2" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
                 </div>
-            </div>
+            </form>
+        </div>
+    </nav>
 
-            <div class="card col mx-1">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        <i class="fa-solid fa-earth-americas"></i>Explore The World
-                    </h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">Sample text. Click to select the text box.</h6>
+    <main style="height: 100vh;" class="container-fluid m-0 p-0">
+
+        <section class="vh-100" id="sec1" style="padding-top: 75px;">
+            <div class=" container d-flex justify-content-center flex-column h-100">
+                <div class="row display-6 fs-5 justify-content-center">
+                    TRAVEL AGENCY
                 </div>
-            </div>
 
-            <div class="card col mx-1">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="fa-solid fa-campground"></i> Adventure Vacations
-                    </h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">Sample text. Click to select the text box.</h6>
+                <div class="row d-flex justify-content-center mt-2 mb-3" id="img-1">
+                    <a href="index.html" class="w-auto p-0 m-0">
+                        <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/a6c2db37762a57b7904508f8/rrr.png"
+                            alt="..." id="img-1" draggable="false">
+                    </a>
                 </div>
-            </div>
 
-            <div class="card col mx-1">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="fa-solid fa-hotel"></i> Luxurious Hotels</h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">Sample text. Click to select the text box.</h6>
+                <div class="row text-center">
+                    <h1 class="h1" style="font-size: 50px;">Wonderful tours</h1>
+                </div>
+
+                <div class="row text-center">
+                    <span class="display-6 fs-3">Duis aute irure dolor in reprehenderit in voluptate velit esse.</span>
+                </div>
+
+                <div class="row d-flex align-items-center justify-content-center">
+                    <button type="button"
+                        class="btn btn-outline-light text-uppercase fs-3 mt-5 hoverScale rounded-pill lead"
+                        style="width: auto;
+                        padding: 20px 70px;
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">
+                        Read more
+                    </button>
                 </div>
             </div>
         </section>
 
-        <section class="container-fluid my-2" id="cont-images">
-            <div class="circle" id="c1"></div>
-            <div class="circle" id="c2"></div>
-            <div class="circle" id="c3"></div>
-            <div class="circle" id="c4"></div>
-            <div class="circle" id="c5"></div>
+        <section class="container" id="sec2" style="padding-top: 75px; min-height: 150vh; position: relative;">
+
+            <div class="w-100 d-flex align-items-center justify-content-around flex-row"
+                style="position: absolute; top: -55px; left: 0;">
+
+                <div class="card card-2 rounded-5 d-flex align-items-center justify-content-around flex-column p-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2652/2652596.png" class="card-img-top m-0 p-0"
+                            alt="..." style="
+                        width: 6rem; margin-bottom: 2.3rem !important;
+                        " draggable="false">
+                    </div>
+                    <div
+                        class="card-body h-100 d-flex align-items-center justify-content-center flex-column p-0 m-0 h-100">
+                        <h5 class="card-title text-uppercase display-5 text-center p-0 w-100"
+                            style="font-size: 1.6rem; font-weight: 350;">
+                            Traveller Tours
+                        </h5>
+                        <p class="card-text text-center lead mt-auto mb-2" style="width: 90%; font-size: 1rem;">
+                            Sample text.
+                            Click to select the text box.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card-2 rounded-5 d-flex align-items-center justify-content-around flex-column p-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/7894/7894182.png" class="card-img-top m-0 p-0"
+                            alt="..." style="
+                        width: 7rem; margin-bottom: 1.3rem !important;
+                        " draggable="false">
+                    </div>
+                    <div
+                        class="card-body h-100 d-flex align-items-center justify-content-center flex-column p-0 m-0 h-100">
+                        <h5 class="card-title text-uppercase display-5 text-center p-0 w-100"
+                            style="font-size: 1.6rem; font-weight: 350;">
+                            Explore World
+                        </h5>
+                        <p class="card-text text-center lead mt-auto mb-2" style="width: 90%; font-size: 1rem;">
+                            Sample text.
+                            Click to select the text box.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card-2 rounded-5 d-flex align-items-center justify-content-around flex-column p-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/13538/13538120.png"
+                            class="card-img-top m-0 p-0" alt="..." style="
+                        width: 8rem; margin-bottom: 0.13rem !important;
+                        " draggable="false">
+                    </div>
+                    <div
+                        class="card-body h-100 d-flex align-items-center justify-content-center flex-column p-0 m-0 h-100">
+                        <h5 class="card-title text-uppercase display-5 text-center p-0 w-100"
+                            style="font-size: 1.6rem; font-weight: 350;">
+                            Adventure
+                        </h5>
+                        <p class="card-text text-center lead mt-auto mb-2" style="width: 90%; font-size: 1rem;">
+                            Sample text.
+                            Click to select the text box.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card-2 rounded-5 d-flex align-items-center justify-content-around flex-column p-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/10365/10365088.png"
+                            class="card-img-top m-0 p-0" alt="..." style="
+                        width: 7rem; margin-bottom: 1.13rem !important;
+                        " draggable="false">
+                    </div>
+                    <div
+                        class="card-body h-100 d-flex align-items-center justify-content-center flex-column p-0 m-0 h-100">
+                        <h5 class="card-title text-uppercase display-5 text-center p-0 w-100"
+                            style="font-size: 1.6rem; font-weight: 350;">
+                            Luxurious
+                        </h5>
+                        <p class="card-text text-center lead mt-auto mb-2" style="width: 90%; font-size: 1rem;">
+                            Sample text.
+                            Click to select the text box.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-auto" style="position: relative; min-height: 100vh; margin-top: 280px;">
+                <div class="circle circle-img" id="c1" style="position: absolute; top: 6%; left: 16%;">
+                    <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="...">
+                </div>
+                <div class="circle" id="c2" style="position: absolute; bottom: 45%; left: 11%;"></div>
+                <div class="circle circle-img" id="c3" style="position: absolute; bottom: 4%; left: 20%;">
+                    <img src="https://images.pexels.com/photos/1324803/pexels-photo-1324803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="...">
+                </div>
+                <div class="circle circle-img" id="c4" style="position: absolute; top: 3%; right: 12%;">
+                    <img src="https://images.pexels.com/photos/1001430/pexels-photo-1001430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="...">
+                </div>
+                <div class="circle" id="c5" style="position: absolute; bottom: 2%; right: 14%;"></div>
+            </div>
+
+            <div class="w-100 d-flex align-items-center justify-content-around my-5">
+                <div class="d-flex align-items-center justify-content-around flex-column text-center col-8">
+                    <h3 class="h3 fs-1 text-uppercase">Backpacking Trips</h3>
+                    <p class="lead">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt
+                        mollit.
+                    </p>
+                    <span class="m-auto mt-2 mb-1">Images from <a class="text-light fst-italic" href="pexels.com"
+                            target="_blank">Pexels</a></span>
+                    <button type="button" class="text-uppercase hoverScale rounded-pill btn-2 fs-4"
+                        style="padding: 15px 50px 15px 50px; opacity: 1;">Read More</button>
+                </div>
+            </div>
+
         </section>
 
-        <section id="cont-text">
-            <h2>Backpacking Trips</h2>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
-            <article id="link"><a href="" id="read-me">READ MORE</a></article>
-        </section>
-    </section>
+        <section class="container" id="AboutUs" style="padding-top: 85px; min-height: 100vh;">
+            <div class="d-flex flex-row vh-100">
+                <div class="col-6 h-100">
+                    <h2 class="h2">
+                        <a href="#AboutUs" class="h2 text-decoration-none">About Us</a>
+                    </h2>
+                    <p class="lead">A life's work of embracing both the creative and the quantitative,
+                        developing
+                        thriving
+                        online businesses
+                        and enviable brands.</p>
+                    <div class="text-bg-light p-4 rounded-4 col-8 float-end">
+                        <p>Sit amet massa vitae tortor condimentum lacinia quis. Ornare arcu dui vivamus
+                            arcu
+                            felis bibendum
+                            ut. Consectetur adipiscing elit duis tristique sollicitudin. Volutpat lacus
+                            laoreet non
+                            curabitur. Magna fringilla urna porttitor rhoncus. Ultricies leo integer
+                            malesuada nunc vel
+                            risus commodo viverra. Ipsum a arcu cursus vitae congue. Imperdiet dui accumsan
+                            sit amet
+                            nulla
+                            facilisi. Tincidunt dui ut ornare lectus sit. Phasellus faucibus scelerisque
+                            eleifend donec
+                            pretium vulputate sapien nec. Eget gravida cum sociis natoque. </p>
+                        <button type="button" class="text-uppercase hoverScale rounded-pill btn-2">Read
+                            More</button>
+                    </div>
+                </div>
+                <div class="col-6 h-100 mt-auto">
 
-    <script src="assets/js/main.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+                    <div class="d-flex align-items-center justify-content-center flex-column">
+                        <div style="width: 420px; height: 400px; overflow: hidden;" class="rounded-circle ">
+
+                            <img src="https://media.istockphoto.com/id/1153216757/pt/foto/group-of-smiling-friends-traveling-friendship-travel-vacation-summer-and-people-concept.jpg?s=1024x1024&w=is&k=20&c=dRci9qikta2Tk_fZBpaq4vMNg1gl6iE8xPWJ-tQxais="
+                                alt="Descrição da imagem" class="rounded-circle hoverScale"
+                                style="object-fit: cover; width: 100%; height: 100%; object-position: -68px 0px;"
+                                draggable="false">
+
+                        </div>
+
+                        <span class="m-auto my-4">Images from <a class="text-light fst-italic" href="pexels.com"
+                                target="_blank">iStock</a></span>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" style="height: 80vh;" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+
+                <div class="carousel-inner h-100">
+
+                    <div class="carousel-item active h-100">
+                        <div class="d-flex align-items-center justify-content-center h-100">
+                            <div class="card col-3 mx-3 rounded-5">
+                                <div class="rounded-top-5 overflow-hidden image">
+                                    <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="card-img-top" alt="..." draggable="false">
+                                </div>
+                                <div class="card-body h-100">
+                                    <h5 class="card-title h4">Mountains</h5>
+                                    <p class="card-text lead" style="font-size: 17px;">Sample text. Click to
+                                        select the
+                                        text box. Click
+                                        again or
+                                        double click to start editing the text.</p>
+                                </div>
+                                <div class="card-footer rounded-bottom-5">
+                                    <button type="button"
+                                        class="btn btn-outline-primary d-flex align-items-center justify-content-center rounded-bottom-5 hoverScale"
+                                        style="width: 100%; height: 3em;">
+                                        <span class="text-uppercase lead">More</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="card col-3 mx-3 rounded-5">
+                                <div class="rounded-top-5 overflow-hidden image">
+                                    <img src="https://images.pexels.com/photos/831088/pexels-photo-831088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="card-img-top" alt="..." draggable="false">
+                                </div>
+                                <div class="card-body h-100">
+                                    <h5 class="card-title h4">Waterfalls</h5>
+                                    <p class="card-text lead" style="font-size: 17px;">Sample text. Click to
+                                        select the
+                                        text box. Click
+                                        again or
+                                        double click to start editing the text.</p>
+                                </div>
+                                <div class="card-footer rounded-bottom-5">
+                                    <button type="button"
+                                        class="btn btn-outline-primary d-flex align-items-center justify-content-center rounded-bottom-5 hoverScale"
+                                        style="width: 100%; height: 3em;">
+                                        <span class="text-uppercase lead">More</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="card col-3 mx-3 rounded-5">
+                                <div class="rounded-top-5 overflow-hidden image">
+                                    <img src="https://images.pexels.com/photos/2169857/pexels-photo-2169857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="card-img-top rounded-top-5" alt="..." draggable="false">
+                                </div>
+                                <div class="card-body h-100">
+                                    <h5 class="card-title h4">Road Travel</h5>
+                                    <p class="card-text lead" style="font-size: 17px;">Sample text. Click to
+                                        select the
+                                        text box. Click
+                                        again or
+                                        double click to start editing the text.</p>
+                                </div>
+                                <div class="card-footer rounded-bottom-5">
+                                    <button type="button"
+                                        class="btn btn-outline-primary d-flex align-items-center justify-content-center rounded-bottom-5 hoverScale"
+                                        style="width: 100%; height: 3em;">
+                                        <span class="text-uppercase lead">More</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item h-100">
+                        <div class="d-flex align-items-center justify-content-center h-100">
+                            <div class="card col-3 mx-3 rounded-5">
+                                <div class="rounded-top-5 overflow-hidden image">
+                                    <img src="https://images.pexels.com/photos/2499862/pexels-photo-2499862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="card-img-top" alt="..." draggable="false">
+                                </div>
+                                <div class="card-body h-100">
+                                    <h5 class="card-title h4">Hidden Caves</h5>
+                                    <p class="card-text lead" style="font-size: 17px;">Sample text. Click to
+                                        select the
+                                        text box. Click
+                                        again or
+                                        double click to start editing the text.</p>
+                                </div>
+                                <div class="card-footer rounded-bottom-5">
+                                    <button type="button"
+                                        class="btn btn-outline-primary d-flex align-items-center justify-content-center rounded-bottom-5 hoverScale"
+                                        style="width: 100%; height: 3em;">
+                                        <span class="text-uppercase lead">More</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="card col-3 mx-3 rounded-5">
+                                <div class="rounded-top-5 overflow-hidden image">
+                                    <img src="https://images.pexels.com/photos/2193349/pexels-photo-2193349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="card-img-top" alt="..." draggable="false">
+                                </div>
+                                <div class="card-body h-100">
+                                    <h5 class="card-title h4">Scenic Lakes</h5>
+                                    <p class="card-text lead" style="font-size: 17px;">Sample text. Click to
+                                        select the
+                                        text box. Click
+                                        again or
+                                        double click to start editing the text.</p>
+                                </div>
+                                <div class="card-footer rounded-bottom-5">
+                                    <button type="button"
+                                        class="btn btn-outline-primary d-flex align-items-center justify-content-center rounded-bottom-5 hoverScale"
+                                        style="width: 100%; height: 3em;">
+                                        <span class="text-uppercase lead">More</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="card col-3 mx-3 rounded-5">
+                                <div class="rounded-top-5 overflow-hidden image">
+                                    <img src="https://images.pexels.com/photos/998631/pexels-photo-998631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        class="card-img-top rounded-top-5" alt="..." draggable="false">
+                                </div>
+                                <div class="card-body h-100">
+                                    <h5 class="card-title h4">Desert Adventures</h5>
+                                    <p class="card-text lead" style="font-size: 17px;">Sample text. Click to
+                                        select the
+                                        text box. Click
+                                        again or
+                                        double click to start editing the text.</p>
+                                </div>
+                                <div class="card-footer rounded-bottom-5">
+                                    <button type="button"
+                                        class="btn btn-outline-primary d-flex align-items-center justify-content-center rounded-bottom-5 hoverScale"
+                                        style="width: 100%; height: 3em;">
+                                        <span class="text-uppercase lead">More</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="container" id="Freedom" style="min-height: 100vh; position: relative;">
+            <div class="w-100 p-0 m-0 d-flex align-items-center justify-content-center">
+
+                <div class="vh-100 d-flex align-items-center col-8" style="position: relative;">
+                    <a class="circle circle-img" id="c6" href="#Freedom" style="position: absolute; right: 0;">
+                        <img src="https://images.pexels.com/photos/11118714/pexels-photo-11118714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="...">
+                    </a>
+                    <a class="text-light text-decoration-none fst-italic text-center" href="#Freedom"
+                        style="font-size: 90px; font-weight: 400; z-index: 1000;">Freedom</a>
+                </div>
+            </div>
+            <p class="lead col-4 ms-auto text-end" style="margin-right: 10rem;">Duis aute irure dolor in reprehenderit
+                in
+                voluptate velit
+                esse
+                cillum
+                dolore
+                eu fugiat
+                nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.</p>
+            <div class="circle" id="c7" style="position: absolute; bottom: -2%; left: 15%;"></div>
+        </section>
+
+        <section class="container d-flex align-items-center justify-content-center flex-column" id="sec3"
+            style="min-height: 120vh;">
+            <div class="wrapper">
+                <div class="itemLeft item1">
+                    <img src="https://images.pexels.com/photos/29381897/pexels-photo-29381897/free-photo-of-processado-com-vsco-com-4-predefinicoes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Image 1" draggable="false">
+                </div>
+                <div class="itemLeft item2">
+                    <img src="https://images.pexels.com/photos/25462218/pexels-photo-25462218/free-photo-of-mar-panorama-vista-paisagem.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Image 2" draggable="false">
+                </div>
+                <div class="itemLeft item3">
+                    <img src="https://images.pexels.com/photos/29420823/pexels-photo-29420823/free-photo-of-pinaculo-gotico-ornamentado-contra-ceu-claro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Image 3" draggable="false">
+                </div>
+                <div class="itemLeft item4">
+                    <img src="https://images.pexels.com/photos/4058519/pexels-photo-4058519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Image 4" draggable="false">
+                </div>
+                <div class="itemLeft item5">
+                    <img src="https://images.pexels.com/photos/8968660/pexels-photo-8968660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Image 5" draggable="false">
+                </div>
+                <div class="itemLeft item6">
+                    <img src="https://images.pexels.com/photos/18875997/pexels-photo-18875997/free-photo-of-pequena-cidade-perto-de-hallstatter-see.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Image 6" draggable="false">
+                </div>
+                <div class="itemLeft item7">
+                    <img src="https://images.pexels.com/photos/29298931/pexels-photo-29298931.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Image 7" draggable="false">
+                </div>
+                <div class="itemLeft item8">
+                    <img src="https://images.pexels.com/photos/831088/pexels-photo-831088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Image 8" draggable="false">
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="itemRight item1">
+                    <img src="https://images.pexels.com/photos/29432826/pexels-photo-29432826/free-photo-of-nascer-do-sol-sereno-no-cove-island-park.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Image 1" draggable="false">
+                </div>
+                <div class="itemRight item2">
+                    <img src="https://images.pexels.com/photos/16036299/pexels-photo-16036299/free-photo-of-panorama-vista-paisagem-por-do-sol.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Image 2" draggable="false">
+                </div>
+                <div class="itemRight item3">
+                    <img src="https://images.pexels.com/photos/1475248/pexels-photo-1475248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Image 3" draggable="false">
+                </div>
+                <div class="itemRight item4">
+                    <img src="https://images.pexels.com/photos/2882599/pexels-photo-2882599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Image 4" draggable="false">
+                </div>
+                <div class="itemRight item5">
+                    <img src="https://images.pexels.com/photos/29421050/pexels-photo-29421050/free-photo-of-vista-aerea-dramatica-do-lago-e-dos-canions-em-utah.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Image 5" draggable="false">
+                </div>
+                <div class="itemRight item6">
+                    <img src="https://images.pexels.com/photos/29402929/pexels-photo-29402929/free-photo-of-por-do-sol-no-brasil.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Image 6" draggable="false">
+                </div>
+                <div class="itemRight item7">
+                    <img src="https://images.pexels.com/photos/12366046/pexels-photo-12366046.jpeg" alt="Image 7"
+                        draggable="false">
+                </div>
+                <div class="itemRight item8">
+                    <img src="https://images.pexels.com/photos/1684504/pexels-photo-1684504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Image 8" draggable="false">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="container vh-100 d-flex align-items-center justify-content-center flex-column w-100" id="sec4"
+            style="position: relative;">
+            <div class="circle" id="c8" style="position: absolute; bottom: 5%; left: 5%;"></div>
+            <a class="circle circle-img" id="c9" href="#sec4"
+                style="position: absolute; bottom: 5%; left: 5%; z-index: 1000;">
+                <img src="https://images.pexels.com/photos/2450296/pexels-photo-2450296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="...">
+            </a>
+            <div class="circle" id="c10" style="position: absolute; top: -10%; right: 15%;"></div>
+            <div class="d-flex align-items-end justify-content-end flex-column w-100 px-5"
+                style="min-height: 140vh; margin-right: 2rem;">
+
+                <div class="text-bg-light rounded-4 col-6 d-flex align-items-start justify-content-start flex-column p-5"
+                    style="z-index: 1000;">
+                    <a class="h1 fst-italic text-decoration-none" href=" #sec4"
+                        style="font-size: 3rem; font-weight: 500;">Hot Air Balloon
+                        Festival
+                    </a>
+
+                    <p class="lead" style="font-weight: 400; margin-top: 2rem;">Article evident arrived express highest
+                        men did boy.
+                        Mistress sensible entirely am
+                        so. Quick can
+                        manor smart money hopes worth too.
+                    </p>
+
+                    <span class="lead my-2 mb-4" style="font-weight: 400;">Images from <a class="text-black fst-italic"
+                            href="pexels.com" target="_blank">iStock</a></span>
+
+                    <button type="button" class="text-uppercase hoverScale rounded-pill btn-3">Read
+                        More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container d-flex align-items-center justify-content-center flex-column w-100"
+            style="min-height: 100vh; padding-top: 15rem;">
+
+            <div class="w-100 d-flex align-items-center justify-content-center flex-column vh-100" id="GetInTouch">
+
+                <a href="#GetInTouch" class="h3 text-decoration-none" style="font-size: 4rem;">Get in touch</a>
+
+                <div class="col-9 mt-5">
+
+                    <form class="g-3 needs-validation" novalidate="">
+                        <div class="row d-flex align-items-center justify-content-between mb-4">
+
+                            <div class="input-group" style="width: 50%;">
+                                <span class="input-group-text">
+                                    <i class="bi bi-person-fill"></i>
+                                </span>
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="floatingInputGroup1"
+                                        placeholder="Username" required>
+                                    <label for="floatingInputGroup1">Username</label>
+                                </div>
+                            </div>
+
+                            <div class="input-group" style="width: 50%;">
+                                <span class="input-group-text">
+                                    <i class="bi bi-envelope-at"></i>
+                                </span>
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInputValue"
+                                        placeholder="name@example.com" required>
+                                    <label for="floatingInputValue">Email</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="input-group">
+                            <div class="form-floating mb-5">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px; max-height: 200px;"></textarea>
+                                <label for="floatingTextarea2">Comments</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Agree to terms and conditions
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" style="height: 3rem;">
+                            <button class="btn btn-outline-primary w-100 h-100 rounded-5" type="submit">Submit
+                                form</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src=" assets/js/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
