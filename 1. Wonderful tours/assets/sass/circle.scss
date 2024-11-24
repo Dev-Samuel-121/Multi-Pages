@@ -1,6 +1,7 @@
 .circle {
     overflow: hidden;
     border-radius: 50%;
+    transition: all 0.3s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
@@ -17,34 +18,143 @@
     }
 }
 
+.texto {
+    left: 0;
+    opacity: 0;
+    color: none;
+    bottom: -50%;
+    height: 5rem;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.64) 85%, rgba(0, 0, 0, 0));
+}
+
 #c1 {
+    top: 6%;
+    left: 16%;
     width: 14rem;
     height: 14rem;
+    z-index: 1000;
     cursor: pointer;
+    position: absolute;
+
+
+    &:hover {
+        width: 30rem;
+        height: 15rem;
+        border-radius: 10rem;
+
+        .texto {
+            left: 0;
+            bottom: 0;
+            opacity: 1;
+            color: #fff;
+
+
+
+            p {
+                &:hover {
+                    font-size: 1.2rem !important;
+                }
+            }
+        }
+
+        img {
+            filter: brightness(80%);
+        }
+    }
 }
 
 #c2 {
+    left: 11%;
+    bottom: 45%;
     width: 7.5rem;
     height: 7.5rem;
+    position: absolute;
     border: 1.5rem solid rgb(218, 110, 72);
 }
 
 #c3 {
+    left: 20%;
+    bottom: 4%;
     width: 20rem;
     height: 20rem;
     z-index: 10000;
     cursor: pointer;
+    position: absolute;
+
+    &:hover {
+        left: 10%;
+        width: 40rem;
+        height: 20.5rem;
+        border-radius: 10rem;
+
+        .texto {
+            left: 0;
+            bottom: 0;
+            opacity: 1;
+            height: 7rem;
+            color: #fff;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.764) 85%, rgba(0, 0, 0, 0));
+
+            p {
+                font-size: 1.2rem !important;
+
+                &:hover {
+                    font-size: 1.4rem !important;
+                }
+            }
+        }
+
+        img {
+            filter: brightness(80%);
+        }
+    }
 }
 
 #c4 {
+    top: 3%;
+    right: 12%;
     width: 35rem;
     height: 35rem;
     cursor: pointer;
+    position: absolute;
+
+    &:hover {
+        right: 15%;
+        width: 50rem;
+        z-index: 100000;
+        border-radius: 20rem;
+
+        .texto {
+            left: 0;
+            bottom: 0;
+            opacity: 1;
+            height: 12rem;
+            color: #fff;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.764) 85%, rgba(0, 0, 0, 0));
+
+            p {
+                font-size: 1.3rem !important;
+
+                &:hover {
+                    font-size: 1.5rem !important;
+                }
+            }
+        }
+
+        img {
+            filter: brightness(80%);
+        }
+    }
 }
 
 #c5 {
+    right: 14%;
+    bottom: 2%;
     width: 15rem;
     height: 15rem;
+    position: absolute;
     border: 2.7rem solid rgb(124, 124, 124);
 }
 
@@ -81,32 +191,127 @@
 /* ======================== */
 
 #c11 {
+    right: 17%;
+    bottom: 5%;
     width: 15rem;
     height: 15rem;
+    z-index: 1000;
     cursor: pointer;
+    position: absolute;
+
+    &:hover {
+        width: 30rem;
+        height: 15rem;
+        border-radius: 10rem;
+
+        .texto {
+            left: 0;
+            bottom: 0;
+            opacity: 1;
+            color: #fff;
+
+            p {
+                &:hover {
+                    font-size: 1.2rem !important;
+                }
+            }
+        }
+
+        img {
+            filter: brightness(80%);
+        }
+    }
 }
 
 #c12 {
+    top: 45%;
+    right: 11%;
     width: 7.5rem;
     height: 7.5rem;
+    position: absolute;
     border: 1.5rem solid rgb(72, 110, 218);
 }
 
 #c13 {
+    top: 4%;
+    right: 20%;
     width: 20rem;
     height: 20rem;
     z-index: 10000;
     cursor: pointer;
+    position: absolute;
+
+    &:hover {
+        right: 10%;
+        width: 40rem;
+        height: 20.5rem;
+        border-radius: 10rem;
+
+        .texto {
+            left: 0;
+            bottom: 0;
+            opacity: 1;
+            height: 7rem;
+            color: #fff;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.764) 85%, rgba(0, 0, 0, 0));
+
+            p {
+                font-size: 1.2rem !important;
+
+                &:hover {
+                    font-size: 1.4rem !important;
+                }
+            }
+        }
+
+        img {
+            filter: brightness(80%);
+        }
+    }
 }
 
 #c14 {
+    bottom: 3%;
+    left: 12%;
     width: 35rem;
     height: 35rem;
     cursor: pointer;
+    position: absolute;
+
+    &:hover {
+        right: 15%;
+        width: 50rem;
+        z-index: 100000;
+        border-radius: 20rem;
+
+        .texto {
+            left: 0;
+            bottom: 0;
+            opacity: 1;
+            height: 12rem;
+            color: #fff;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.764) 85%, rgba(0, 0, 0, 0));
+
+            p {
+                font-size: 1.3rem !important;
+
+                &:hover {
+                    font-size: 1.5rem !important;
+                }
+            }
+        }
+
+        img {
+            filter: brightness(80%);
+        }
+    }
 }
 
 #c15 {
+    top: 2%;
+    left: 14%;
     width: 15rem;
     height: 15rem;
+    position: absolute;
     border: 2.7rem solid rgb(180, 141, 104);
 }
